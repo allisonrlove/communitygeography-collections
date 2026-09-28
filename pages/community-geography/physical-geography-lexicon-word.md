@@ -8,8 +8,6 @@ section_url: "/community-geography/index.html"
 
 # Physical Geography Lexicon Word
 
-<img src="{{ '/assets/images/community-geography/physical-geography-1.png' | relative_url }}" loading="lazy" decoding="async" width="400" height="400" alt="physical-geography-1.png" />
-
-<img src="{{ '/assets/images/community-geography/physical-geography-2.png' | relative_url }}" loading="lazy" decoding="async" width="400" height="400" alt="physical-geography-2.png" />
-
-<img src="{{ '/assets/images/community-geography/physical-geography-3.png' | relative_url }}" loading="lazy" decoding="async" width="400" height="400" alt="physical-geography-3.png" />
+{% assign images = '/assets/images/community-geography/physical-geography-1.png, /assets/images/community-geography/physical-geography-2.png, /assets/images/community-geography/physical-geography-3.png' | split: ', ' %}
+{% assign alt_texts = 'Physical geography lexicon artwork, first panel.||Physical geography lexicon artwork, second panel.||Physical geography lexicon artwork, third panel.' | split: '||' %}
+{% include images/carousel.html id="physical-geography-lexicon-carousel" images=images alt-texts=alt_texts %}

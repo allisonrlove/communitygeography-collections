@@ -8,10 +8,6 @@ section_url: "/community-geography/index.html"
 
 # Headwaters Dependent Systems Lexicon Word
 
-<img src="{{ '/assets/images/community-geography/hds-1.png' | relative_url }}" loading="lazy" decoding="async" width="400" height="400" alt="hds-1.png" />
-
-<img src="{{ '/assets/images/community-geography/hds-2.png' | relative_url }}" loading="lazy" decoding="async" width="400" height="400" alt="hds-2.png" />
-
-<img src="{{ '/assets/images/community-geography/hds-3.png' | relative_url }}" loading="lazy" decoding="async" width="400" height="400" alt="hds-3.png" />
-
-<img src="{{ '/assets/images/community-geography/hds-4.png' | relative_url }}" loading="lazy" decoding="async" width="400" height="400" alt="hds-4.png" />
+{% assign images = '/assets/images/community-geography/hds-1.png, /assets/images/community-geography/hds-2.png, /assets/images/community-geography/hds-3.png, /assets/images/community-geography/hds-4.png' | split: ', ' %}
+{% assign alt_texts = 'Headwaters dependent systems lexicon artwork, first panel.||Headwaters dependent systems lexicon artwork, second panel.||Headwaters dependent systems lexicon artwork, third panel.||Headwaters dependent systems lexicon artwork, fourth panel.' | split: '||' %}
+{% include images/carousel.html id="headwaters-dependent-systems-lexicon-carousel" images=images alt-texts=alt_texts %}

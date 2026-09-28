@@ -8,8 +8,6 @@ section_url: "/community-geography/index.html"
 
 # Geography Lexicon Word
 
-<img src="{{ '/assets/images/community-geography/signal-2023-05-02-172650_004.jpeg' | relative_url }}" loading="lazy" decoding="async" width="400" height="400" alt="signal-2023-05-02-172650_004.jpeg" />
-
-<img src="{{ '/assets/images/community-geography/signal-2023-05-02-172650_003.jpeg' | relative_url }}" loading="lazy" decoding="async" width="400" height="400" alt="signal-2023-05-02-172650_003.jpeg" />
-
-<img src="{{ '/assets/images/community-geography/signal-2023-05-02-172650_002.jpeg' | relative_url }}" loading="lazy" decoding="async" width="400" height="400" alt="signal-2023-05-02-172650_002.jpeg" />
+{% assign images = '/assets/images/community-geography/signal-2023-05-02-172650_004.jpeg, /assets/images/community-geography/signal-2023-05-02-172650_003.jpeg, /assets/images/community-geography/signal-2023-05-02-172650_002.jpeg' | split: ', ' %}
+{% assign alt_texts = 'Geography lexicon artwork, first panel.||Geography lexicon artwork, second panel.||Geography lexicon artwork, third panel.' | split: '||' %}
+{% include images/carousel.html id="geography-lexicon-carousel" images=images alt-texts=alt_texts %}
