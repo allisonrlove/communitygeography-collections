@@ -1,32 +1,70 @@
 /*****************************************************
 UNM THEME
-UNM cherry and silver, applied to Xanthan's semantic design tokens.
+Modern UNM palette applied to Xanthan's semantic design tokens.
 Loads: every page through theme_css in _config.yml.
 Used by: Xanthan components and base-unm.html.
 Needs: base.css. Layout rules live in community.css.
 *****************************************************/
 :root {
-  --accent-primary: #ba0c2f;
-  --accent-primary-dark: #8a0923;
-  --accent-border: #a7a8aa;
-  --interactive-hover: #8a0923;
-  --interactive-hover-bg: #8a0923;
-  --bg-page: #ffffff;
-  --bg-card: #f4f4f3;
-  --bg-nav: #343536;
-  --bg-footer: #343536;
-  --bg-section-alt: #f4f4f3;
-  --text-body: #252525;
-  --text-muted: #58595b;
+  /* Teal carries the site identity; cherry is reserved for actions and focus. */
+  --accent-primary: #007a86;
+  --accent-primary-dark: #005d66;
+  --accent-border: #d6a461;
+  --interactive-hover: #ba0c2f;
+  --interactive-hover-bg: #ba0c2f;
+  --interactive-subtle: color-mix(in srgb, #007a86 12%, transparent);
+  --interactive-subtle-hover: color-mix(in srgb, #ba0c2f 12%, transparent);
+
+  --bg-page: #f8f8f6;
+  --bg-card: #ffffff;
+  --bg-nav: #303335;
+  --bg-footer: #303335;
+  --bg-footer-bottom: #242628;
+  --bg-section-alt: #edf4f3;
+  --bg-section-alt-flat: #edf4f3;
+  --bg-section-cool: #e5f0ef;
+  --bg-section-warm: #fff7df;
+  --bg-feature-band: #007a86;
+  --bg-page-header: #303335;
+  --bg-editorial-note: #edf4f3;
+
+  --text-body: #303335;
+  --text-muted: #63666a;
   --text-on-dark: #ffffff;
-  --text-h1: #ba0c2f;
-  --text-h2: #343536;
-  --text-h3: #343536;
-  --text-h4: #343536;
-  --text-h5: #58595b;
-  --text-lede: #343536;
-  --font-body: 'Gotham', 'Arial', sans-serif;
-  --font-heading: 'Gotham', 'Arial', sans-serif;
+  --text-h1: #007a86;
+  --text-h2: #303335;
+  --text-h3: #007a86;
+  --text-h4: #303335;
+  --text-h5: #ba0c2f;
+  --text-lede: #4e5356;
+  --text-kicker: #ba0c2f;
+  --text-feature-band-link: #ffc600;
+  --text-feature-band-link-hover: #ffffff;
+
+  --button-bg: #007a86;
+  --button-hover-bg: #ba0c2f;
+  --button-text: #ffffff;
+  --button-hover-text: #ffffff;
+  --card-bg: #ffffff;
+  --card-border: color-mix(in srgb, #63666a 22%, transparent);
+  --card-hover-border: #007a86;
+  --card-heading-color: #303335;
+  --card-text-color: #63666a;
+  --border-section-alt: color-mix(in srgb, #007a86 20%, transparent);
+  --border-section-cool: color-mix(in srgb, #007a86 24%, transparent);
+  --border-section-warm: #d6a461;
+
+  --font-body: 'Gotham A', 'Gotham B', 'Gotham', Arial, sans-serif;
+  --font-heading: 'Vitesse A', 'Vitesse B', 'Vitesse', Georgia, serif;
+  --font-serif: 'Vitesse A', 'Vitesse B', 'Vitesse', Georgia, serif;
+  --font-mono: 'Gotham A', 'Gotham B', 'Gotham', Arial, sans-serif;
   --width-center: var(--unm-shell-width, 1170px);
   --width-reading: 54rem;
+  --radius-sm: 3px;
+  --radius-md: 6px;
+  --radius-lg: 10px;
+  --shadow-sm: 0 2px 5px rgba(48, 51, 53, 0.08);
+  --shadow-md: 0 8px 20px rgba(48, 51, 53, 0.1);
+  --shadow-lg: 0 14px 32px rgba(48, 51, 53, 0.16);
+  --shadow-hover: 0 14px 28px rgba(0, 122, 134, 0.2);
 }

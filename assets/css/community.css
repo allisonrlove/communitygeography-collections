@@ -5,15 +5,42 @@ Loads: every page. Used by: base-unm.html and unm/ includes.
 Needs: Xanthan base.css and themes/unm.css.
 Not here: university branding (unm.css), or navigation behavior (nav.css).
 *****************************************************/
-.center-masthead { background: var(--bg-page); }
+.center-masthead { background: var(--bg-page); border-bottom: 1px solid var(--border-light); }
 .center-masthead a { display: block; max-width: 120rem; margin: 0 auto; border: 0; }
 .center-masthead img { width: 100%; height: auto; display: block; }
 .top-nav-inner { max-width: var(--width-center); }
-.top-nav-brand { font-size: .9rem; }
-.top-nav-link:hover, .top-nav-link:focus, .top-nav a:visited:hover, .top-nav a:visited:focus { color: var(--text-on-dark); background: var(--accent-primary); }
-.center-breadcrumbs { max-width: var(--width-center); margin: var(--spacing-md) auto 0; padding-inline: var(--unm-gutter); font-size: .8rem; display: flex; flex-wrap: wrap; gap: var(--spacing-sm); color: var(--text-muted); }
+.top-nav-brand {
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+.top-nav-link {
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.top-nav-link:hover, .top-nav-link:focus, .top-nav a:visited:hover, .top-nav a:visited:focus {
+  color: var(--text-on-dark);
+  background: var(--accent-primary);
+}
+.center-breadcrumbs {
+  max-width: var(--width-center);
+  margin: var(--spacing-lg) auto 0;
+  padding-inline: var(--unm-gutter);
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+  color: var(--text-muted);
+}
+.center-breadcrumbs a { color: var(--accent-primary); border-bottom: 0; }
 .center-content { padding-block: var(--spacing-lg) var(--spacing-xl); grid-template-columns: [full-start] minmax(0, 1fr) [content-start] minmax(0, var(--width-reading)) [content-end] minmax(0, 1fr) [full-end]; }
-.center-content h1 { font-size: clamp(2rem, 4vw, 3.2rem); margin-top: 0; line-height: 1.15; }
+.center-content h1 { font-size: clamp(2.25rem, 4vw, 3.5rem); margin-top: 0; line-height: 1.08; }
 .center-content h2 { font-size: clamp(1.45rem, 2.5vw, 2rem); }
 .center-content img { max-width: 100%; height: auto; object-fit: contain; }
 .center-content iframe { max-width: 100%; }
@@ -27,12 +54,12 @@ Not here: university branding (unm.css), or navigation behavior (nav.css).
 .center-content--home, .center-content:has(.community-projects) { display: block; width: 100%; max-width: var(--width-center); margin-inline: auto; padding-inline: var(--unm-gutter); }
 .welcome-grid { display: grid; grid-template-columns: minmax(0, 1fr) 18rem; gap: var(--spacing-xl); }
 .welcome-intro { display: flow-root; }
-.welcome-news { border-left: 1px solid var(--border-medium); padding-left: var(--spacing-lg); }
+.welcome-news { border-left: 3px solid var(--accent-border); padding-left: var(--spacing-lg); }
 .welcome-news h2 { margin-top: 0; font-size: 1.5rem; }
 .welcome-news p { font-size: .85rem; line-height: 1.5; margin-bottom: var(--spacing-sm); }
 .welcome-news p:has(em) { color: var(--text-muted); padding-bottom: var(--spacing-sm); margin-bottom: var(--spacing-md); border-bottom: 1px solid var(--border-light); }
 .legacy-sidebar { border-top: 1px solid var(--border-medium); margin-top: var(--spacing-xl); padding-top: var(--spacing-lg); }
-.center-footer { background: var(--bg-card); border-top: 3px solid var(--accent-primary); }
+.center-footer { background: var(--bg-section-alt); border-top: 4px solid var(--accent-primary); }
 .center-footer-inner { align-items: flex-start; padding-block: var(--spacing-xl); font-size: .9rem; }
 .center-footer p { margin-bottom: 0; margin-top: var(--spacing-sm); }
 @media (max-width: 767px) {
@@ -49,11 +76,23 @@ Not here: university branding (unm.css), or navigation behavior (nav.css).
 }
 
 .community-projects { grid-column: full; max-width: var(--width-center); width: 100%; padding-inline: 0; margin-inline: auto; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--spacing-lg); }
-.community-project { background: var(--bg-card); border: 1px solid var(--border-light); }
+.community-project {
+  overflow: hidden;
+  background: var(--bg-card);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal), border-color var(--transition-normal);
+}
+.community-project:hover {
+  border-color: var(--accent-primary);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
+}
 .community-project > a { display: block; border: 0; }
 .community-project img { width: 100%; height: 13rem; object-fit: cover; display: block; background: var(--bg-page); }
 .community-project-body { padding: var(--spacing-md); }
-.community-project h2 { font-size: 1.2rem; margin: 0 0 var(--spacing-md); }
+.community-project h2 { font-size: 1.35rem; margin: 0 0 var(--spacing-sm); }
 .community-project p { font-size: .8rem; margin-bottom: var(--spacing-xs); }
 @media (max-width: 991px) { .community-projects { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 600px) { .community-projects { grid-template-columns: 1fr; } }
