@@ -1,4 +1,5 @@
 ---
+archived: true
 title: Center Proud to Sponsor Annual Leopold Lecture - Robin Wall Kimmerer
 permalink: /news/sponsor-leopold-lecture.html
 source_url: https://communitygeography.unm.edu/news/sponsor-leopold-lecture.html

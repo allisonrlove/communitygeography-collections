@@ -1,4 +1,5 @@
 ---
+archived: true
 title: Center adds five new team members for Spring 2023
 permalink: /news/center-adds-five-new-team-members-for-spring-2023.html
 source_url: https://communitygeography.unm.edu/news/center-adds-five-new-team-members-for-spring-2023.html

@@ -1,4 +1,5 @@
 ---
+archived: true
 title: The UNM Community Engagement Center is recruiting for its Public Allies program!
 permalink: /news/the-unm-community-engagement-center-is-recruiting-for-its-public-allies-program.html
 source_url: https://communitygeography.unm.edu/news/the-unm-community-engagement-center-is-recruiting-for-its-public-allies-program.html

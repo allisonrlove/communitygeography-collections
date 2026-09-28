@@ -1,4 +1,5 @@
 ---
+archived: true
 title: Join the 2022 City Nature Challenge!
 permalink: /news/april-11-2022.html
 source_url: https://communitygeography.unm.edu/news/april-11-2022.html

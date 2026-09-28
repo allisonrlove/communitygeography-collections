@@ -1,4 +1,5 @@
 ---
+archived: true
 title: Department Launches New Center Focused on Community Geography
 permalink: /news/august-10-2020.html
 source_url: https://communitygeography.unm.edu/news/august-10-2020.html

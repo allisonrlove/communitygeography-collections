@@ -1,4 +1,5 @@
 ---
+archived: true
 title: Congratulations Students! 2021-2022 Graduate Fellowships Announced
 permalink: /news/may-18,-2021.html
 source_url: https://communitygeography.unm.edu/news/may-18,-2021.html

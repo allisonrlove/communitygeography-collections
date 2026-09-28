@@ -1,4 +1,5 @@
 ---
+archived: true
 title: Geography Awareness Week
 permalink: /news/november-1-2020.html
 source_url: https://communitygeography.unm.edu/news/november-1-2020.html

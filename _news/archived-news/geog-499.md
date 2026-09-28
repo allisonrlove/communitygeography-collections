@@ -1,4 +1,5 @@
 ---
+archived: true
 title: 'New Spring 2024 Field Course at UNM! GEOG 499: Environmental Justice in Greater Chaco'
 permalink: /news/geog-499.html
 source_url: https://communitygeography.unm.edu/news/geog-499.html

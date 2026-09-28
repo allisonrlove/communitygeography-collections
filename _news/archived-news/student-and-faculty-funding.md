@@ -1,4 +1,5 @@
 ---
+archived: true
 title: 'Apply Now: Funding opportunities for UNM students and faculty'
 permalink: /news/april-12,-2021.html
 source_url: https://communitygeography.unm.edu/news/april-12,-2021.html

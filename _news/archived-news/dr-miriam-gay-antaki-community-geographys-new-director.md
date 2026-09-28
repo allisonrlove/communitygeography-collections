@@ -1,4 +1,5 @@
 ---
+archived: true
 title: Dr. Miriam Gay-Antaki- The Center for Community Geography's New Director
 permalink: /news/dr-miriam-gay-antaki-community-geographys-new-director.html
 source_url: https://communitygeography.unm.edu/news/dr-miriam-gay-antaki-community-geographys-new-director.html

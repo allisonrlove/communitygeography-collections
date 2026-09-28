@@ -1,4 +1,5 @@
 ---
+archived: true
 title: Join the 2023 City Nature Challenge!
 permalink: /news/join-the-2023-city-nature-challenge.html
 source_url: https://communitygeography.unm.edu/news/join-the-2023-city-nature-challenge.html

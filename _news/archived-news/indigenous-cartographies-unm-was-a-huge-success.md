@@ -1,4 +1,5 @@
 ---
+archived: true
 title: Indigenous Cartographies @ UNM was a huge success!
 permalink: /news/indigenous-cartographies-unm-was-a-huge-success.html
 source_url: https://communitygeography.unm.edu/news/indigenous-cartographies-unm-was-a-huge-success.html

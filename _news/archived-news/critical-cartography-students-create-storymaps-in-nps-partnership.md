@@ -1,4 +1,5 @@
 ---
+archived: true
 title: Critical Cartography StoryMaps Connect Community Members to El Camino Real de Tierra Adentro National Historic Trail
 permalink: /news/critical-cartography-students-create-storymaps-in-nps-partnership.html
 source_url: https://communitygeography.unm.edu/news/critical-cartography-students-create-storymaps-in-nps-partnership.html

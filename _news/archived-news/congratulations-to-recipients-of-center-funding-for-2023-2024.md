@@ -1,4 +1,5 @@
 ---
+archived: true
 title: Congratulations to Recipients of Center Funding for 2023-2024!
 permalink: /news/congratulations-to-recipients-of-center-funding-for-2023-2024.html
 source_url: https://communitygeography.unm.edu/news/congratulations-to-recipients-of-center-funding-for-2023-2024.html

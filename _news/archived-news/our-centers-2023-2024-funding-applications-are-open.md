@@ -1,4 +1,5 @@
 ---
+archived: true
 title: Our Center's 2023-2024 Funding Applications are Open
 permalink: /news/our-centers-2023-2024-funding-applications-are-open.html
 source_url: https://communitygeography.unm.edu/news/our-centers-2023-2024-funding-applications-are-open.html

@@ -1,4 +1,5 @@
 ---
+archived: true
 title: The Center for Community Geography Spring Funding Cycle is Open!
 permalink: /news/funding-announcement.html
 source_url: https://communitygeography.unm.edu/news/funding-announcement.html

@@ -1,4 +1,5 @@
 ---
+archived: true
 title: 'Get to know Dr. Silas Grant, Instructor of GEOG 499: Environmental Justice in Greater Chaco!'
 permalink: /news/get-to-know-dr-silas-grant-instructor-of-geog-499-environmental-justice-in-greater-chaco.html
 source_url: https://communitygeography.unm.edu/news/get-to-know-dr-silas-grant-instructor-of-geog-499-environmental-justice-in-greater-chaco.html

@@ -1,4 +1,5 @@
 ---
+archived: true
 title: Center for Community Geography adds staff member
 permalink: /news/august-30,-2020.html
 source_url: https://communitygeography.unm.edu/news/august-30,-2020.html

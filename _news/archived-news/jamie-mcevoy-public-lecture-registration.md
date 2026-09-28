@@ -1,4 +1,5 @@
 ---
+archived: true
 title: Registration now open for Dr. Jamie McEvoy's public lecture and Q&A March 29th
 permalink: /news/march-29,-2021.html
 source_url: https://communitygeography.unm.edu/news/march-29,-2021.html

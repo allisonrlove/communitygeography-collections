@@ -1,4 +1,5 @@
 ---
+archived: true
 title: Help us do citizen science! ABQ City Nature Challenge 2021
 permalink: /news/march-22,-2021.html
 source_url: https://communitygeography.unm.edu/news/march-22,-2021.html

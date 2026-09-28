@@ -1,4 +1,5 @@
 ---
+archived: true
 title: We are happy to welcome Laurel Ladwig as the Center's new Associate Director!
 permalink: /news/we-are-happy-to-welcome-laurel-ladwig-as-the-centers-new-associate-director.html
 source_url: https://communitygeography.unm.edu/news/we-are-happy-to-welcome-laurel-ladwig-as-the-centers-new-associate-director.html

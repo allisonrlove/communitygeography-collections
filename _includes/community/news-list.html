@@ -2,7 +2,7 @@
 {% if include.archived %}
   {% assign stories = stories | where: 'archived', true %}
 {% else %}
-  {% assign stories = stories | where: 'archived', false %}
+  {% assign stories = stories | where_exp: 'story', 'story.archived != true' %}
 {% endif %}
 {% if include.featured %}{% assign stories = site.news | where_exp: 'story', 'story.featured_order' | sort: 'featured_order' %}{% endif %}
 {% for story in stories %}

@@ -1,4 +1,5 @@
 ---
+archived: true
 title: Welcome Associate Director Dr. Miriam Gay-Antaki to the Center for Community Geography Team!
 permalink: /news/march-28,-2021.html
 source_url: https://communitygeography.unm.edu/news/march-28,-2021.html

@@ -1,4 +1,5 @@
 ---
+archived: true
 title: New course to focus on community mapping
 permalink: /news/october-1-2020.html
 source_url: https://communitygeography.unm.edu/news/october-1-2020.html
