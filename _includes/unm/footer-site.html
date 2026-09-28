@@ -1,7 +1,18 @@
 {% comment %}Department contact footer. Values come from site configuration.{% endcomment %}
 <section class="center-footer" aria-label="Center contact information">
   <div class="center-footer-inner">
-    <div><strong>{{ site.name }}</strong><p>Department of Geography &amp; Environmental Studies<br>University of New Mexico</p></div>
-    <div><a href="mailto:{{ site.email }}">{{ site.email }}</a><br><a href="https://www.instagram.com/nmcommunitygeog/">Instagram: @NMcommunitygeog</a><br><a href="{{ '/about/contact-us.html' | relative_url }}">Contact us</a></div>
+    <div class="center-footer-identity">
+      <p class="center-footer-kicker">Community Geography at UNM</p>
+      <h2>{{ site.name }}</h2>
+      <p class="center-footer-affiliation">Department of Geography &amp; Environmental Studies<br>University of New Mexico</p>
+    </div>
+    <div class="center-footer-connect">
+      <h2>Stay connected</h2>
+      <ul class="center-footer-links">
+        <li><a href="mailto:{{ site.email }}">Email us <span aria-hidden="true">→</span></a></li>
+        <li><a href="https://www.instagram.com/nmcommunitygeog/">Follow @NMcommunitygeog <span aria-hidden="true">↗</span></a></li>
+      </ul>
+      <a class="center-footer-cta" href="{{ '/about/contact-us.html' | relative_url }}">Contact us <span aria-hidden="true">→</span></a>
+    </div>
   </div>
 </section>
