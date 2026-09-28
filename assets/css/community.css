@@ -130,6 +130,133 @@ Not here: university branding (unm.css), or navigation behavior (nav.css).
   font-size: .7rem;
   line-height: 1.35;
 }
+.instagram-feed {
+  margin: 0 calc(var(--unm-gutter) * -1);
+  padding: clamp(2.5rem, 5vw, 4.5rem) var(--unm-gutter);
+  background: var(--bg-section-alt);
+  border-block: 1px solid var(--border-light);
+}
+.instagram-feed-header {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: var(--spacing-md);
+  max-width: var(--width-center);
+  margin: 0 auto var(--spacing-lg);
+}
+.instagram-feed-kicker {
+  margin: 0 0 var(--spacing-xs);
+  color: var(--text-kicker);
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+.instagram-feed h2 {
+  margin: 0;
+  color: var(--text-h2);
+  font-size: clamp(1.8rem, 3vw, 2.65rem);
+  line-height: 1.1;
+}
+.instagram-profile-link,
+.instagram-profile-link:visited {
+  flex: 0 0 auto;
+  color: var(--accent-primary);
+  border-bottom: 1px solid currentColor;
+  font-size: .8rem;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.instagram-profile-link:hover,
+.instagram-profile-link:focus-visible { color: var(--interactive-hover); }
+.instagram-carousel {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: var(--spacing-sm);
+  max-width: calc(var(--width-center) + 5rem);
+  margin: 0 auto;
+}
+.instagram-carousel-track {
+  display: grid;
+  grid-auto-columns: minmax(13rem, 22rem);
+  grid-auto-flow: column;
+  gap: var(--spacing-md);
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  padding: .25rem;
+  scroll-behavior: smooth;
+  scroll-snap-type: inline mandatory;
+  scrollbar-width: none;
+}
+.instagram-carousel-track::-webkit-scrollbar { display: none; }
+.instagram-feed-status {
+  grid-column: 1 / -1;
+  margin: var(--spacing-md) 0;
+  color: var(--text-muted);
+}
+.instagram-post {
+  overflow: hidden;
+  aspect-ratio: 1;
+  background: var(--bg-page);
+  box-shadow: var(--shadow-sm);
+  scroll-snap-align: start;
+}
+.instagram-post a { display: block; height: 100%; border: 0; position: relative; }
+.instagram-post img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform var(--transition-normal);
+}
+.instagram-post-overlay {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: var(--spacing-md);
+  color: var(--text-on-dark);
+  background: color-mix(in srgb, var(--bg-nav) 72%, transparent);
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  opacity: 0;
+  text-align: center;
+  text-transform: uppercase;
+  transition: opacity var(--transition-fast);
+}
+.instagram-post a:hover img,
+.instagram-post a:focus-visible img { transform: scale(1.05); }
+.instagram-post a:hover .instagram-post-overlay,
+.instagram-post a:focus-visible .instagram-post-overlay { opacity: 1; }
+.instagram-carousel-control {
+  width: 2.75rem;
+  height: 2.75rem;
+  padding: 0;
+  color: var(--text-on-dark);
+  background: var(--accent-primary);
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.2rem;
+  line-height: 1;
+  transition: background var(--transition-fast), transform var(--transition-fast);
+}
+.instagram-carousel-control:hover,
+.instagram-carousel-control:focus-visible {
+  background: var(--interactive-hover);
+  transform: translateY(-2px);
+}
+.instagram-carousel-control:disabled { cursor: wait; opacity: .45; transform: none; }
+.instagram-feed-fallback {
+  max-width: var(--width-center);
+  margin: var(--spacing-md) auto 0;
+  color: var(--text-muted);
+}
+.instagram-feed-fallback a { color: var(--accent-primary); }
 .legacy-sidebar { border-top: 1px solid var(--border-medium); margin-top: var(--spacing-xl); padding-top: var(--spacing-lg); }
 .center-footer { background: var(--bg-section-alt); border-top: 4px solid var(--accent-primary); }
 .center-footer-inner { align-items: flex-start; padding-block: var(--spacing-xl); font-size: .9rem; }
@@ -146,6 +273,11 @@ Not here: university branding (unm.css), or navigation behavior (nav.css).
   .welcome-hero { grid-template-columns: 1fr; min-height: auto; gap: var(--spacing-xl); padding-block: var(--spacing-xl); }
   .welcome-copy { max-width: none; }
   .welcome-image { max-width: 34rem; width: 100%; margin-inline: auto; aspect-ratio: 4 / 3; }
+  .instagram-feed { margin-inline: calc(var(--unm-gutter) * -1); }
+  .instagram-feed-header { align-items: flex-start; flex-direction: column; }
+  .instagram-carousel { grid-template-columns: minmax(0, 1fr); }
+  .instagram-carousel-control { display: none; }
+  .instagram-carousel-track { grid-auto-columns: minmax(15rem, 78vw); }
 }
 
 .community-projects { grid-column: full; max-width: var(--width-center); width: 100%; padding-inline: 0; margin-inline: auto; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--spacing-lg); }
