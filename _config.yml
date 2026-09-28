@@ -25,6 +25,10 @@ defaults:
   values:
     layout: base-unm
 - scope:
+    path: 'pages/projects/project'
+  values:
+    layout: project-unm
+- scope:
     path: ''
     type: events
   values:
