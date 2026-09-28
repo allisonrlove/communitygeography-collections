@@ -17,13 +17,13 @@ layout: base-unm
   </div>
 
   <div class="instagram-carousel" aria-label="Latest posts from the Center for Community Geography on Instagram">
-    <button class="instagram-carousel-control instagram-carousel-control--previous" type="button" aria-label="Show previous Instagram posts" disabled>
+    <button class="instagram-carousel-control instagram-carousel-control--previous" type="button" aria-label="Show previous Instagram posts" hidden>
       <span aria-hidden="true">←</span>
     </button>
     <div class="instagram-carousel-track" tabindex="0" aria-live="polite">
       <p class="instagram-feed-status">Loading the latest posts from Instagram…</p>
     </div>
-    <button class="instagram-carousel-control instagram-carousel-control--next" type="button" aria-label="Show next Instagram posts" disabled>
+    <button class="instagram-carousel-control instagram-carousel-control--next" type="button" aria-label="Show next Instagram posts" hidden>
       <span aria-hidden="true">→</span>
     </button>
   </div>
@@ -40,4 +40,5 @@ layout: base-unm
   </noscript>
 </section>
 
+<script id="instagram-feed-data" type="application/json">{{ site.data.instagram-feed | jsonify }}</script>
 <script src="{{ '/assets/js/instagram-carousel.js' | relative_url }}" defer></script>

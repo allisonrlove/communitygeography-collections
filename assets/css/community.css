@@ -250,7 +250,6 @@ Not here: university branding (unm.css), or navigation behavior (nav.css).
   background: var(--interactive-hover);
   transform: translateY(-2px);
 }
-.instagram-carousel-control:disabled { cursor: wait; opacity: .45; transform: none; }
 .instagram-feed-fallback {
   max-width: var(--width-center);
   margin: var(--spacing-md) auto 0;
