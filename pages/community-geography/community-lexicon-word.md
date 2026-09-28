@@ -8,8 +8,6 @@ section_url: "/community-geography/index.html"
 
 # Community Lexicon Word
 
-<img src="{{ '/assets/images/community-geography/community-11.png' | relative_url }}" loading="lazy" decoding="async" width="400" height="400" alt="community-1.png" />
-
-<img src="{{ '/assets/images/community-geography/community-2.png' | relative_url }}" loading="lazy" decoding="async" width="400" height="400" alt="community-2.png" />
-
-<img src="{{ '/assets/images/community-geography/community-3.png' | relative_url }}" loading="lazy" decoding="async" width="400" height="400" alt="community-3.png" />
+{% assign images = '/assets/images/community-geography/community-11.png, /assets/images/community-geography/community-2.png, /assets/images/community-geography/community-3.png' | split: ', ' %}
+{% assign alt_texts = 'Community lexicon artwork, first panel.||Community lexicon artwork, second panel.||Community lexicon artwork, third panel.' | split: '||' %}
+{% include images/carousel.html id="community-lexicon-carousel" images=images alt-texts=alt_texts %}

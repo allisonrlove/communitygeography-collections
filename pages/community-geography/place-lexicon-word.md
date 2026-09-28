@@ -8,8 +8,6 @@ section_url: "/community-geography/index.html"
 
 # Place Lexicon Word
 
-<img src="{{ '/assets/images/community-geography/place-1.png' | relative_url }}" loading="lazy" decoding="async" width="400" height="400" alt="place-1.png" />
-
-<img src="{{ '/assets/images/community-geography/place-2.png' | relative_url }}" loading="lazy" decoding="async" width="400" height="400" alt="place-2.png" />
-
-<img src="{{ '/assets/images/community-geography/place-3.png' | relative_url }}" loading="lazy" decoding="async" width="400" height="400" alt="place-3.png" />
+{% assign images = '/assets/images/community-geography/place-1.png, /assets/images/community-geography/place-2.png, /assets/images/community-geography/place-3.png' | split: ', ' %}
+{% assign alt_texts = 'Place lexicon artwork, first panel.||Place lexicon artwork, second panel.||Place lexicon artwork, third panel.' | split: '||' %}
+{% include images/carousel.html id="place-lexicon-carousel" images=images alt-texts=alt_texts %}

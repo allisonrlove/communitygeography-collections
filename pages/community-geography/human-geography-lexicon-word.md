@@ -8,8 +8,6 @@ section_url: "/community-geography/index.html"
 
 # Human Geography Lexicon Word
 
-<img src="{{ '/assets/images/community-geography/human-geography-1.png' | relative_url }}" loading="lazy" decoding="async" width="400" height="400" alt="human-geography-1.png" />
-
-<img src="{{ '/assets/images/community-geography/human-geography-2.png' | relative_url }}" loading="lazy" decoding="async" width="400" height="400" alt="human-geography-2.png" />
-
-<img src="{{ '/assets/images/community-geography/human-geography-3.png' | relative_url }}" loading="lazy" decoding="async" width="400" height="400" alt="human-geography-3.png" />
+{% assign images = '/assets/images/community-geography/human-geography-1.png, /assets/images/community-geography/human-geography-2.png, /assets/images/community-geography/human-geography-3.png' | split: ', ' %}
+{% assign alt_texts = 'Human geography lexicon artwork, first panel.||Human geography lexicon artwork, second panel.||Human geography lexicon artwork, third panel.' | split: '||' %}
+{% include images/carousel.html id="human-geography-lexicon-carousel" images=images alt-texts=alt_texts %}
