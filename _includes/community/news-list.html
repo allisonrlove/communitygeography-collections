@@ -1,4 +1,9 @@
 {% assign stories = site.news | sort: 'sort_date' | reverse %}
+{% if include.archived %}
+  {% assign stories = stories | where: 'archived', true %}
+{% else %}
+  {% assign stories = stories | where: 'archived', false %}
+{% endif %}
 {% if include.featured %}{% assign stories = site.news | where_exp: 'story', 'story.featured_order' | sort: 'featured_order' %}{% endif %}
 {% for story in stories %}
   {% assign year = story.archive_year %}

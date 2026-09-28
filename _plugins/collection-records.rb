@@ -35,7 +35,9 @@ Jekyll::Hooks.register :site, :post_read do |site|
     %w[title permalink].each { |key| raise "#{record.relative_path}: missing #{key}" if d[key].to_s.empty? }
     CommunityRecords.validate_date!(d['published_date'], record.relative_path) if d['published_date']
     year = d['published_date']&.slice(0,4) || d['published_year'] || 'undated'
-    raise "#{record.relative_path}: year folder disagrees with publication metadata" unless record.relative_path.include?("_news/#{year}/")
+    d['archived'] = record.relative_path.include?('_news/archived-news/')
+    expected_directory = d['archived'] ? '_news/archived-news/' : "_news/#{year}/"
+    raise "#{record.relative_path}: folder disagrees with publication metadata" unless record.relative_path.include?(expected_directory)
     d['archive_year'] = year
     d['sort_date'] = d['published_date'] || "#{year}-00-00"
   end
