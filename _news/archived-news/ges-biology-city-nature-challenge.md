@@ -1,4 +1,5 @@
 ---
+archived: true
 title: GES challenges Biology Department in 2021 City Nature Challenge
 permalink: /news/april-22,-2021.html
 source_url: https://communitygeography.unm.edu/news/april-22,-2021.html

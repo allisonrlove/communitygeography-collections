@@ -1,4 +1,5 @@
 ---
+archived: true
 title: Center Announces Panelists for Indigenous Cartographies @ UNM Events
 permalink: /news/center-announces-panelists-for-indigenous-cartographies-unm-events.html
 source_url: https://communitygeography.unm.edu/news/center-announces-panelists-for-indigenous-cartographies-unm-events.html

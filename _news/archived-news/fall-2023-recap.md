@@ -1,4 +1,5 @@
 ---
+archived: true
 title: Recap of Fall 2023 Center for Community Geography Events and Plans for Spring 2024
 permalink: /news/fall-2023-recap.html
 source_url: https://communitygeography.unm.edu/news/fall-2023-recap.html

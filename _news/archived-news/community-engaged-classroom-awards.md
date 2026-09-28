@@ -1,4 +1,5 @@
 ---
+archived: true
 title: Congratulations Faculty! 2021-2022 Seed Funding Awards for Community Engaged Classrooms Announced
 permalink: /news/july-12,-2021.html
 source_url: https://communitygeography.unm.edu/news/july-12,-2021.html

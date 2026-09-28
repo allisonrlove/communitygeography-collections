@@ -1,4 +1,5 @@
 ---
+archived: true
 title: 'Announcement: Center for Community Geography Now Accepting Applications for Faculty Affiliation'
 permalink: /news/announcement-center-for-community-geography-now-accepting-applications-for-faculty-affiliation.html
 source_url: https://communitygeography.unm.edu/news/announcement-center-for-community-geography-now-accepting-applications-for-faculty-affiliation.html

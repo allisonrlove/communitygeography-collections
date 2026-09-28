@@ -1,4 +1,5 @@
 ---
+archived: true
 title: The Center for Community Geography is Robert H. Mallory’s gift back to the department that transformed his life
 permalink: /december-22,-2020.html
 source_url: https://communitygeography.unm.edu/december-22,-2020.html

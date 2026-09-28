@@ -1,4 +1,5 @@
 ---
+archived: true
 title: 'Rethinking Fountainbridge: Honoring the Past and Greening the Future in an Edinburgh Neighborhood'
 permalink: /news/fall-colloquium.html
 source_url: https://communitygeography.unm.edu/news/fall-colloquium.html

@@ -1,4 +1,5 @@
 ---
+archived: true
 title: 'Featured Spring 2025 Fellow: Juna Keehn'
 permalink: /news/featured-fellow-juna-keehn.html
 source_url: https://communitygeography.unm.edu/news/featured-fellow-juna-keehn.html

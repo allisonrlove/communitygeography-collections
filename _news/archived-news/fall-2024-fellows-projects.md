@@ -1,4 +1,5 @@
 ---
+archived: true
 title: Fall 2024 Community Geography Fellows' Projects
 permalink: /fall-2024-fellows-projects.html
 source_url: https://communitygeography.unm.edu/fall-2024-fellows-projects.html

@@ -1,4 +1,5 @@
 ---
+archived: true
 title: Congratulations Award Winners! 2022-2023 Graduate Fellowships & Seed Funding Awardees
 permalink: /news/awardwinners22-23.html
 source_url: https://communitygeography.unm.edu/news/awardwinners22-23.html

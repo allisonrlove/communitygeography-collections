@@ -1,4 +1,5 @@
 ---
+archived: true
 title: Center adds new members to our team and welcomes Dr. Miriam Gay-Antaki as our Interim Director for the spring semester!
 permalink: /news/center-adds-new-members-to-our-team-and-welcomes-dr-miriam-gay-antaki-as-our-interim-director-for-the-spring-semester.html
 source_url: https://communitygeography.unm.edu/news/center-adds-new-members-to-our-team-and-welcomes-dr-miriam-gay-antaki-as-our-interim-director-for-the-spring-semester.html

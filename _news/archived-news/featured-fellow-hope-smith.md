@@ -1,4 +1,5 @@
 ---
+archived: true
 title: 'Featured Spring 2025 Fellow: Hope Smith'
 permalink: /news/featured-fellow-hope-smith.html
 source_url: https://communitygeography.unm.edu/news/featured-fellow-hope-smith.html

@@ -1,4 +1,5 @@
 ---
+archived: true
 title: Center for Community Geography adds three new staff members for Fall 2022
 permalink: /news/september-20-2022.html
 source_url: https://communitygeography.unm.edu/news/september-20-2022.html

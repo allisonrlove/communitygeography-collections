@@ -1,4 +1,5 @@
 ---
+archived: true
 title: 'Announcement: Our Center''s Affiliate Applications are Now Open!'
 permalink: /news/announcement-2023-affiliates-application-now-open1.html
 source_url: https://communitygeography.unm.edu/news/announcement-2023-affiliates-application-now-open1.html
