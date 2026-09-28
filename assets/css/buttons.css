@@ -38,7 +38,9 @@ Not here: the tag pills and tag filter UI in cards.css, which look similar but
   /* Visual */
   background: var(--button-bg);
   border: none;
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-sm);
+  font-weight: 700;
+  letter-spacing: 0.02em;
 
   /* Interactivity */
   transition: background-color var(--transition-normal), transform var(--transition-fast), box-shadow var(--transition-normal);
