@@ -1,11 +1,6 @@
 ---
 layout: base-unm
 ---
-<div class="welcome-grid">
-  <article class="welcome-intro">{{ content }}</article>
-  <aside class="welcome-news" aria-label="Recent news">
-    {% capture news %}{% include community/home-news.md %}{% endcapture %}
-    {{ news | markdownify }}
-    <a href="{{ '/news/2026.html' | relative_url }}">News archive →</a>
-  </aside>
-</div>
+<section class="welcome-hero" aria-labelledby="welcome-title">
+  {{ content }}
+</section>

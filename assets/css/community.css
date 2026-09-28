@@ -52,12 +52,84 @@ Not here: university branding (unm.css), or navigation behavior (nav.css).
 .center-article .img-left { float: left; max-width: 35%; margin: 0 var(--spacing-md) var(--spacing-md) 0; }
 .center-article .img-right { float: right; max-width: 45%; margin: 0 0 var(--spacing-md) var(--spacing-lg); }
 .center-content--home, .center-content:has(.community-projects) { display: block; width: 100%; max-width: var(--width-center); margin-inline: auto; padding-inline: var(--unm-gutter); }
-.welcome-grid { display: grid; grid-template-columns: minmax(0, 1fr) 18rem; gap: var(--spacing-xl); }
-.welcome-intro { display: flow-root; }
-.welcome-news { border-left: 3px solid var(--accent-border); padding-left: var(--spacing-lg); }
-.welcome-news h2 { margin-top: 0; font-size: 1.5rem; }
-.welcome-news p { font-size: .85rem; line-height: 1.5; margin-bottom: var(--spacing-sm); }
-.welcome-news p:has(em) { color: var(--text-muted); padding-bottom: var(--spacing-sm); margin-bottom: var(--spacing-md); border-bottom: 1px solid var(--border-light); }
+.center-content--home { padding-block: 0; }
+.welcome-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(18rem, .95fr);
+  align-items: center;
+  gap: clamp(var(--spacing-xl), 6vw, 6rem);
+  min-height: min(48rem, calc(100vh - 10rem));
+  padding-block: clamp(3rem, 8vw, 7rem);
+}
+.welcome-copy { max-width: 39rem; }
+.welcome-kicker {
+  margin: 0 0 var(--spacing-sm);
+  color: var(--text-kicker);
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+.welcome-copy h1 {
+  margin: 0 0 var(--spacing-md);
+  color: var(--text-h2);
+  font-size: clamp(2.4rem, 4.4vw, 4.25rem);
+  line-height: 1.04;
+}
+.welcome-copy p { max-width: 36rem; }
+.welcome-lede {
+  color: var(--accent-primary-dark);
+  font-size: clamp(1.2rem, 1.7vw, 1.45rem);
+  font-weight: 700;
+  line-height: 1.5;
+}
+.welcome-cta,
+.welcome-cta:visited {
+  display: inline-flex;
+  align-items: center;
+  gap: .7rem;
+  margin-top: var(--spacing-sm);
+  padding: .8rem 1.15rem;
+  color: var(--text-on-dark);
+  background: var(--accent-primary);
+  border: 1px solid var(--accent-primary);
+  border-radius: var(--radius-sm);
+  font-size: .82rem;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background var(--transition-fast), border-color var(--transition-fast), transform var(--transition-fast);
+}
+.welcome-cta:hover,
+.welcome-cta:focus-visible {
+  color: var(--text-on-dark);
+  background: var(--interactive-hover);
+  border-color: var(--interactive-hover);
+  transform: translateY(-2px);
+}
+.welcome-image {
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+  aspect-ratio: 4 / 4.5;
+  background: var(--bg-section-alt);
+  box-shadow: var(--shadow-md);
+}
+.welcome-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.welcome-image figcaption {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  max-width: 80%;
+  margin: 0;
+  padding: .65rem .8rem;
+  color: var(--text-on-dark);
+  background: color-mix(in srgb, var(--bg-nav) 88%, transparent);
+  font-size: .7rem;
+  line-height: 1.35;
+}
 .legacy-sidebar { border-top: 1px solid var(--border-medium); margin-top: var(--spacing-xl); padding-top: var(--spacing-lg); }
 .center-footer { background: var(--bg-section-alt); border-top: 4px solid var(--accent-primary); }
 .center-footer-inner { align-items: flex-start; padding-block: var(--spacing-xl); font-size: .9rem; }
@@ -71,8 +143,9 @@ Not here: university branding (unm.css), or navigation behavior (nav.css).
   .center-content .img-left, .center-content .img-right { max-width: 100%; }
   .center-content--home { padding-inline: var(--unm-gutter); }
   .center-content--home :is(p, h1, h2, h3, ul, ol) { padding-inline: 0; }
-  .welcome-grid { grid-template-columns: 1fr; }
-  .welcome-news { border-left: 0; border-top: 1px solid var(--border-medium); padding: var(--spacing-lg) 0 0; }
+  .welcome-hero { grid-template-columns: 1fr; min-height: auto; gap: var(--spacing-xl); padding-block: var(--spacing-xl); }
+  .welcome-copy { max-width: none; }
+  .welcome-image { max-width: 34rem; width: 100%; margin-inline: auto; aspect-ratio: 4 / 3; }
 }
 
 .community-projects { grid-column: full; max-width: var(--width-center); width: 100%; padding-inline: 0; margin-inline: auto; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--spacing-lg); }
