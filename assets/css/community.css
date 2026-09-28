@@ -108,7 +108,10 @@ Not here: university branding (unm.css), or navigation behavior (nav.css).
   align-items: center;
   gap: clamp(var(--spacing-xl), 6vw, 6rem);
   min-height: min(48rem, calc(100vh - 10rem));
-  padding-block: clamp(3rem, 8vw, 7rem);
+  margin-inline: calc(var(--unm-gutter) * -1);
+  padding: clamp(3rem, 8vw, 7rem) var(--unm-gutter);
+  background: var(--bg-section-alt);
+  border-bottom: 0.35rem solid var(--accent-primary);
 }
 .welcome-copy { max-width: 39rem; }
 .welcome-kicker {
@@ -239,8 +242,8 @@ Not here: university branding (unm.css), or navigation behavior (nav.css).
 .community-follow {
   margin: 0 calc(var(--unm-gutter) * -1);
   padding: clamp(2.5rem, 5vw, 4.5rem) var(--unm-gutter);
-  background: var(--bg-section-alt);
-  border-block: 1px solid var(--border-light);
+  background: var(--bg-feature-band);
+  color: var(--text-on-dark);
 }
 .community-follow-inner {
   display: flex;
@@ -252,7 +255,7 @@ Not here: university branding (unm.css), or navigation behavior (nav.css).
 }
 .community-follow-kicker {
   margin: 0 0 var(--spacing-xs);
-  color: var(--text-kicker);
+  color: var(--text-feature-band-link);
   font-size: .75rem;
   font-weight: 700;
   letter-spacing: .14em;
@@ -260,13 +263,14 @@ Not here: university branding (unm.css), or navigation behavior (nav.css).
 }
 .community-follow h2 {
   margin: 0;
-  color: var(--text-h2);
+  color: var(--text-on-dark);
   font-size: clamp(1.8rem, 3vw, 2.65rem);
   line-height: 1.1;
 }
 .community-follow p:not(.community-follow-kicker) {
   max-width: 40rem;
   margin: var(--spacing-sm) 0 0;
+  color: var(--text-feature-band-muted);
 }
 .community-follow-link,
 .community-follow-link:visited {
@@ -276,8 +280,8 @@ Not here: university branding (unm.css), or navigation behavior (nav.css).
   gap: .7rem;
   padding: .8rem 1.15rem;
   color: var(--text-on-dark);
-  background: var(--accent-primary);
-  border: 1px solid var(--accent-primary);
+  background: transparent;
+  border: 1px solid currentColor;
   border-radius: var(--radius-sm);
   font-size: .8rem;
   font-weight: 700;
@@ -288,9 +292,9 @@ Not here: university branding (unm.css), or navigation behavior (nav.css).
 }
 .community-follow-link:hover,
 .community-follow-link:focus-visible {
-  color: var(--text-on-dark);
-  background: var(--interactive-hover);
-  border-color: var(--interactive-hover);
+  color: var(--text-body);
+  background: var(--text-feature-band-link);
+  border-color: var(--text-feature-band-link);
   transform: translateY(-2px);
 }
 .legacy-sidebar { border-top: 1px solid var(--border-medium); margin-top: var(--spacing-xl); padding-top: var(--spacing-lg); }
