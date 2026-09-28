@@ -28,6 +28,10 @@
     url: "/news/index.html"
   - title: Archived News
     url: "/news/archived-news.html"
+  - title: Events Archive
+    url: "/events/index2.html"
+  - title: Upcoming Events
+    url: "/events/index1.html"
 - title: Funding
   url: "/funding/index.html"
   items:
@@ -37,13 +41,6 @@
     url: "/funding/grad-fellowships.html"
   - title: Classroom Fund
     url: "/funding/seed-funding.html"
-- title: Events
-  url: "/events/index2.html"
-  items:
-  - title: Events Archive
-    url: "/events/index2.html"
-  - title: Upcoming Events
-    url: "/events/index1.html"
 - title: Donate
   url: "/donate/index.html"
 - title: Projects
