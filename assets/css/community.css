@@ -179,6 +179,63 @@ Not here: university branding (unm.css), or navigation behavior (nav.css).
   font-size: .7rem;
   line-height: 1.35;
 }
+.community-geography-intro {
+  margin: 0 calc(var(--unm-gutter) * -1);
+  padding: clamp(2.5rem, 5vw, 4.5rem) var(--unm-gutter);
+  background: var(--bg-page);
+  border-top: 1px solid var(--border-light);
+}
+.community-geography-intro-inner {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: var(--spacing-md);
+  max-width: var(--width-center);
+  margin: 0 auto;
+}
+.community-geography-intro-kicker {
+  margin: 0 0 var(--spacing-xs);
+  color: var(--text-kicker);
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+.community-geography-intro h2 {
+  margin: 0;
+  color: var(--text-h2);
+  font-size: clamp(1.8rem, 3vw, 2.65rem);
+  line-height: 1.1;
+}
+.community-geography-intro p:not(.community-geography-intro-kicker) {
+  max-width: 44rem;
+  margin: var(--spacing-sm) 0 0;
+}
+.community-geography-intro-link,
+.community-geography-intro-link:visited {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  gap: .7rem;
+  padding: .8rem 1.15rem;
+  color: var(--text-on-dark);
+  background: var(--accent-primary);
+  border: 1px solid var(--accent-primary);
+  border-radius: var(--radius-sm);
+  font-size: .8rem;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background var(--transition-fast), border-color var(--transition-fast), transform var(--transition-fast);
+}
+.community-geography-intro-link:hover,
+.community-geography-intro-link:focus-visible {
+  color: var(--text-on-dark);
+  background: var(--interactive-hover);
+  border-color: var(--interactive-hover);
+  transform: translateY(-2px);
+}
 .community-follow {
   margin: 0 calc(var(--unm-gutter) * -1);
   padding: clamp(2.5rem, 5vw, 4.5rem) var(--unm-gutter);
@@ -328,6 +385,8 @@ Not here: university branding (unm.css), or navigation behavior (nav.css).
   .welcome-hero { grid-template-columns: 1fr; min-height: auto; gap: var(--spacing-xl); padding-block: var(--spacing-xl); }
   .welcome-copy { max-width: none; }
   .welcome-image { max-width: 34rem; width: 100%; margin-inline: auto; aspect-ratio: 4 / 3; }
+  .community-geography-intro { margin-inline: calc(var(--unm-gutter) * -1); }
+  .community-geography-intro-inner { align-items: flex-start; flex-direction: column; }
   .community-follow { margin-inline: calc(var(--unm-gutter) * -1); }
   .community-follow-inner { align-items: flex-start; flex-direction: column; }
 }
