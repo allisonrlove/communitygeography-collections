@@ -304,3 +304,104 @@ Not here: university branding (unm.css), or navigation behavior (nav.css).
 .community-project p { font-size: .8rem; margin-bottom: var(--spacing-xs); }
 @media (max-width: 991px) { .community-projects { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 600px) { .community-projects { grid-template-columns: 1fr; } }
+
+/* Shared project-detail presentation for pages/projects/project. */
+.project-content {
+  display: block;
+  width: 100%;
+  max-width: var(--width-center);
+  margin-inline: auto;
+  padding-inline: var(--unm-gutter);
+}
+.project-article {
+  max-width: 64rem;
+  margin-inline: auto;
+  padding-block: clamp(1.25rem, 3vw, 2.5rem) clamp(3rem, 7vw, 5rem);
+}
+.project-article > h1 {
+  max-width: 48rem;
+  margin: 0 auto clamp(1.25rem, 3vw, 2.25rem);
+  color: var(--text-h2);
+  font-size: clamp(2.35rem, 5vw, 4.6rem);
+  line-height: 1.04;
+  text-wrap: balance;
+}
+.project-article > h1 + span[id="photo-event"] { display: none; }
+.project-article > h1 + span[id="photo-event"] + img,
+.project-article > h1 + img {
+  display: block;
+  width: 100%;
+  max-width: none;
+  height: clamp(16rem, 42vw, 31rem);
+  margin: 0 0 var(--spacing-lg);
+  object-fit: cover;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+}
+.project-article > h1 + span[id="photo-event"] + img + p,
+.project-article > h1 + span[id="photo-event"] + img + p + p,
+.project-article > h1 + img + p,
+.project-article > h1 + img + p + p {
+  display: inline-flex;
+  flex-direction: column;
+  min-width: 10rem;
+  margin: 0 var(--spacing-sm) var(--spacing-xl) 0;
+  padding: .75rem 1rem;
+  color: var(--text-muted);
+  background: var(--bg-section-alt);
+  border-left: 3px solid var(--accent-primary);
+  font-size: .82rem;
+  font-weight: 700;
+  line-height: 1.45;
+}
+.project-article > h1 + span[id="photo-event"] + img + p + p,
+.project-article > h1 + img + p + p { margin-right: 0; }
+.project-article > :is(p, ul, ol, blockquote) {
+  max-width: 48rem;
+  margin-inline: auto;
+}
+.project-article > p {
+  color: var(--text-body);
+  font-size: clamp(1rem, 1.25vw, 1.12rem);
+  line-height: 1.75;
+}
+.project-article > h2,
+.project-article > h3 {
+  max-width: 48rem;
+  margin-inline: auto;
+  color: var(--text-h2);
+}
+.project-article > img:not(:first-of-type),
+.project-article > figure,
+.project-article > p > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: var(--spacing-xl) auto;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-sm);
+}
+.project-article > ul,
+.project-article > ol {
+  padding-left: 1.5rem;
+  line-height: 1.7;
+}
+@media (max-width: 767px) {
+  .project-content { padding-inline: var(--spacing-md); }
+  .project-article { padding-top: var(--spacing-md); }
+  .project-article > h1 { font-size: clamp(2.25rem, 11vw, 3.4rem); }
+  .project-article > h1 + span[id="photo-event"] + img,
+  .project-article > h1 + img { height: auto; aspect-ratio: 4 / 3; }
+  .project-article > h1 + span[id="photo-event"] + img + p,
+  .project-article > h1 + span[id="photo-event"] + img + p + p,
+  .project-article > h1 + img + p,
+  .project-article > h1 + img + p + p {
+    display: flex;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: var(--spacing-sm);
+  }
+  .project-article > h1 + span[id="photo-event"] + img + p + p,
+  .project-article > h1 + img + p + p { margin-bottom: var(--spacing-lg); }
+}

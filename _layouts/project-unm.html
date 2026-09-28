@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang }}">
+  {% include unm/page-header-unm.html %}
+  <body class="unm-site">
+    {% include nav/skip-link.html %}
+    {% include unm/analytics.html %}
+    <div class="page-wrap">
+      {% include unm/nav-unm.html overlap=true %}
+      <header class="center-masthead">
+        <a href="{{ '/' | relative_url }}" aria-label="{{ site.name }} home">
+          <img src="{{ site.center_banner.image | relative_url }}" width="{{ site.center_banner.width }}" height="{{ site.center_banner.height }}" alt="{{ site.center_banner.alt | escape }}">
+        </a>
+      </header>
+      <div class="unm-site-nav">{% include nav/nav-top.html %}</div>
+      <main id="main">
+        <nav class="center-breadcrumbs" aria-label="Breadcrumb">
+          <a href="{{ '/' | relative_url }}">Home</a>
+          <span aria-hidden="true">/</span>
+          <a href="{{ page.section_url | relative_url }}">{{ page.section }}</a>
+          <span aria-hidden="true">/</span>
+          <span aria-current="page">{{ page.title }}</span>
+        </nav>
+        <div class="container center-content project-content">
+          <article class="project-article">
+            {{ content }}
+          </article>
+        </div>
+      </main>
+      {% include unm/footer-site.html %}
+      {% include unm/footer-unm.html %}
+      {% include nav/search.html %}
+    </div>
+    {% include google_analytics.html %}
+    {% include html/html-js.html %}
+    <script src="{{ '/assets/js/unm.js' | relative_url }}" defer></script>
+  </body>
+</html>
