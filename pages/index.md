@@ -10,14 +10,16 @@ summary: The R.H. Mallory Center for Community Geography is a new unit housed in
   research and learning in the topical area of human-environment dynamics.
 ---
 
-# Welcome
+<div class="welcome-copy">
+  <p class="welcome-kicker">University of New Mexico</p>
+  <h1 id="welcome-title">Welcome to the R.H. Mallory Center for Community Geography.</h1>
+  <p class="welcome-lede">We connect UNM resources with community needs through collaborative research, learning, and action.</p>
+  <p>Our work brings together service learning, collaborative mapping, place-based research, and public events that strengthen relationships between the university and communities across New Mexico.</p>
+  <p>We welcome students, faculty, and community partners who want to address critical human-environment issues together.</p>
+  <a class="welcome-cta" href="{{ '/about/index.html' | relative_url }}">Explore the Center <span aria-hidden="true">→</span></a>
+</div>
 
-<img src="{{ '/assets/images/shared/bosque-by-maria-lane.jpeg' | relative_url }}" class="img-right" loading="eager" decoding="async" width="502" height="502" alt="Cottonwoods in the Rio Grande bosque. Photograph by Maria Lane." />
-
-Welcome to the R.H. Mallory Center for Community Geography, an exciting initiative in the Department of Geography & Environmental Studies (GES) at UNM. Our goal is to connect UNM resources with community needs. We believe we can achieve that goal while simultaneously supporting student learning and skill development.
-
-The center works in four main areas: service learning, collaborative mapping, place-based research, and public events that bring UNM and its surrounding communities together. We welcome inquiries from students, professors, and community groups interested in working with us.
-
-Together, we can address critical human-environment issues in New Mexico. We encourage interested community partners to get in touch via email: <communitygeography@unm.edu>.
-
-[Learn more about the Center →]({{ '/about/index.html' | relative_url }})
+<figure class="welcome-image">
+  <img src="{{ '/assets/images/shared/bosque-by-maria-lane.jpeg' | relative_url }}" loading="eager" decoding="async" width="502" height="502" alt="Cottonwoods in the Rio Grande bosque. Photograph by Maria Lane." />
+  <figcaption>Rio Grande bosque, New Mexico. Photograph by Maria Lane.</figcaption>
+</figure>
