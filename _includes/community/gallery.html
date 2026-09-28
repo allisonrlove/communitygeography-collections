@@ -1,5 +1,10 @@
-<div class="record-gallery">
+<div class="record-gallery" role="list">
 {% for photo in include.photos %}
-  <figure><a href="{{ photo.image | relative_url }}"><img src="{{ photo.image | relative_url }}" alt="{{ photo.alt | escape }}" loading="lazy" decoding="async"></a></figure>
+  <figure class="record-gallery__item" role="listitem">
+    <a href="{{ photo.image | relative_url }}" class="record-gallery__link" aria-label="View {{ photo.alt | escape }} at full size">
+      <img src="{{ photo.image | relative_url }}" alt="{{ photo.alt | escape }}" loading="lazy" decoding="async">
+      <span class="record-gallery__expand" aria-hidden="true">View full size</span>
+    </a>
+  </figure>
 {% endfor %}
 </div>
