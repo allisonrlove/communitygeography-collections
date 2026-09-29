@@ -57,7 +57,7 @@ The default 1170px shell and 235 × 70px logo match unm.edu's desktop header.
 .unm-header .unm-header-logo:focus-visible { outline-color: var(--unm-cherry-dark); outline-offset: -4px; }
 .unm-mobile-tools { display: none; }
 .unm-visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
-.unm-site .unm-site-nav .top-nav { position: relative; width: 100%; background: var(--bg-nav); }
+.unm-site .unm-site-nav .top-nav { width: 100%; background: var(--bg-nav); }
 .unm-site-nav .top-nav-inner { max-width: var(--unm-shell-width); }
 .unm-footer { color: var(--unm-white); background: var(--unm-cherry) url('../unm/mesa-mountain-red.png') right bottom no-repeat; border-top: var(--unm-rule) solid var(--unm-silver); padding: var(--unm-space-lg) 0; font-size: 13.5px; }
 .unm-footer a, .unm-footer a:visited { color: var(--unm-white); text-decoration: none; border: 0; }
