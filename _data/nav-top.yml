@@ -41,8 +41,6 @@
     url: "/funding/grad-fellowships.html"
   - title: Classroom Fund
     url: "/funding/seed-funding.html"
-- title: Donate
-  url: "/donate/index.html"
 - title: Projects
   url: "/projects/index.html"
   items:
@@ -50,3 +48,5 @@
     url: "/projects/index.html"
   - title: Past Projects
     url: "/projects/past-projects/index.html"
+- title: Donate
+  url: "/donate/index.html"
