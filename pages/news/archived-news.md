@@ -11,4 +11,4 @@ section_url: /news/index.html
 
 # Archived News
 
-Current and archived news are now combined on a single [News](/news/index.html) page, grouped by year.
+Current and archived news are now combined on a single [News]({{ '/news/index.html' | relative_url }}) page, grouped by year.
