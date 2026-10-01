@@ -24,10 +24,8 @@
 - title: News
   url: "/news/index.html"
   items:
-  - title: Current News
+  - title: News
     url: "/news/index.html"
-  - title: Archived News
-    url: "/news/archived-news.html"
   - title: Events Archive
     url: "/events/index2.html"
   - title: Upcoming Events

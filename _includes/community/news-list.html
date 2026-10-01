@@ -1,37 +1,58 @@
-{% assign stories = site.news | sort: 'sort_date' | reverse %}
-{% if include.archived %}
-  {% assign stories = stories | where: 'archived', true %}
-{% else %}
-  {% assign stories = stories | where_exp: 'story', 'story.archived != true' %}
-{% endif %}
-{% if include.featured %}{% assign stories = site.news | where_exp: 'story', 'story.featured_order' | sort: 'featured_order' %}{% endif %}
 {% comment %}
-  Filtering by `where: 'archive_year', ...` depends on the same unreliable
-  Liquid-drop property read as `group_by` below, so single-year pages match on
-  `published_date` directly (falling back to `archive_year` only for undated
-  stories) further down, inside the flat-list loop, instead of pre-filtering
-  here with `where_exp` (whose expression parser doesn't support `contains`).
+  News listing include.
+
+  Params:
+    include.year     - restrict to a single year (e.g. "2024")
+    include.featured - homepage widget: hand-picked stories in featured_order
+    include.full     - render full article body instead of a teaser excerpt
+
+  Jekyll's `sort`/`where`/`group_by` filters resolve document properties
+  (sort_date, archived, archive_year) through a Liquid-drop property cache
+  (Jekyll::Filters#item_property) that has proven unreliable in production -
+  it has caused both scrambled chronological order and broken year grouping.
+  So, apart from the small hand-curated `featured` list below, everything
+  here is ordered and grouped with plain Liquid (string ops, bracket
+  indexing, and `sort`/`push` with no property argument), none of which
+  touch that cache.
 {% endcomment %}
+{% if include.featured %}
+  {% assign stories = site.news | where_exp: 'story', 'story.featured_order' | sort: 'featured_order' %}
+{% else %}
+  {% comment %}
+    Build a "date_index" sort key per story (zero-padded index as a
+    tiebreaker/pointer back into the original array), sort those keys as
+    plain strings (newest first), then rebuild `stories` in that order.
+  {% endcomment %}
+  {% assign all_stories = site.news %}
+  {% assign keys = "" %}
+  {% for story in all_stories %}
+    {% assign story_date = story.published_date %}
+    {% unless story_date %}{% assign story_date = story.archive_year | append: "-00-00" %}{% endunless %}
+    {% assign idx = forloop.index0 | append: "" %}
+    {% case idx.size %}
+      {% when 1 %}{% assign idx = "00" | append: idx %}
+      {% when 2 %}{% assign idx = "0" | append: idx %}
+    {% endcase %}
+    {% assign key = story_date | append: "_" | append: idx %}
+    {% if keys == "" %}{% assign keys = key %}{% else %}{% assign keys = keys | append: "," | append: key %}{% endif %}
+  {% endfor %}
+  {% assign sorted_keys = keys | split: "," | sort | reverse %}
+  {% assign stories = "" | split: "," %}
+  {% for key in sorted_keys %}
+    {% assign idx = key | slice: -3, 3 | plus: 0 %}
+    {% assign stories = stories | push: all_stories[idx] %}
+  {% endfor %}
+{% endif %}
 
 {% comment %}
   A single already-filtered year, or a hand-picked featured list, reads fine as
-  one flat chronological list. Everything else (the full current-news index and
-  the all-years archive) is grouped under a year heading so the page reads as a
-  dated timeline rather than an undifferentiated stack of links.
+  one flat chronological list. Everything else (the merged News index) is
+  grouped under a year heading so the page reads as a dated timeline rather
+  than an undifferentiated stack of links.
 {% endcomment %}
 {% assign group_by_year = true %}
 {% if include.year or include.featured %}{% assign group_by_year = false %}{% endif %}
 
-{% comment %}
-  Jekyll's `group_by` filter relies on the document's computed `archive_year`
-  field being readable through its Liquid drop, which has proven unreliable in
-  production (every story collapsing into a single, blank-named group). To get
-  dependable grouping *and* ordering, we derive each story's year directly from
-  its own `published_date` (falling back to `archive_year` only when a story
-  has no `published_date`) using plain Liquid, then build the list of years and
-  each year's stories ourselves. Since `stories` is already sorted newest-first,
-  walking it once to collect years preserves that same newest-first order.
-{% endcomment %}
 {% if group_by_year %}
   {% assign years_str = "" %}
   {% for story in stories %}
