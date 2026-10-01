@@ -5,6 +5,16 @@
   document.addEventListener('DOMContentLoaded', function () {
     var toggler = document.querySelector('.top-nav-toggler');
     var collapse = document.querySelector('.top-nav-collapse');
+    var siteNav = document.querySelector('.unm-site-nav');
+
+    if (siteNav) {
+      var updateScrolledState = function () {
+        siteNav.classList.toggle('is-scrolled', window.scrollY > 8);
+      };
+
+      updateScrolledState();
+      window.addEventListener('scroll', updateScrolledState, { passive: true });
+    }
 
     // Hamburger toggle
     if (toggler && collapse) {
