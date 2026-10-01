@@ -5,7 +5,12 @@
   {% assign stories = stories | where_exp: 'story', 'story.archived != true' %}
 {% endif %}
 {% if include.featured %}{% assign stories = site.news | where_exp: 'story', 'story.featured_order' | sort: 'featured_order' %}{% endif %}
-{% if include.year %}{% assign stories = stories | where: 'archive_year', include.year %}{% endif %}
+{% comment %}
+  Filtering by `where: 'archive_year', ...` depends on the same unreliable
+  Liquid-drop property read as `group_by` below, so match on `published_date`
+  directly (falling back to `archive_year` only for undated stories).
+{% endcomment %}
+{% if include.year %}{% assign stories = stories | where_exp: 'story', 'story.published_date contains include.year or story.archive_year == include.year' %}{% endif %}
 
 {% comment %}
   A single already-filtered year, or a hand-picked featured list, reads fine as
@@ -16,15 +21,45 @@
 {% assign group_by_year = true %}
 {% if include.year or include.featured %}{% assign group_by_year = false %}{% endif %}
 
+{% comment %}
+  Jekyll's `group_by` filter relies on the document's computed `archive_year`
+  field being readable through its Liquid drop, which has proven unreliable in
+  production (every story collapsing into a single, blank-named group). To get
+  dependable grouping *and* ordering, we derive each story's year directly from
+  its own `published_date` (falling back to `archive_year` only when a story
+  has no `published_date`) using plain Liquid, then build the list of years and
+  each year's stories ourselves. Since `stories` is already sorted newest-first,
+  walking it once to collect years preserves that same newest-first order.
+{% endcomment %}
+{% if group_by_year %}
+  {% assign years_str = "" %}
+  {% for story in stories %}
+    {% assign story_year = story.published_date | date: '%Y' %}
+    {% if story_year == "" or story_year == nil %}{% assign story_year = story.archive_year %}{% endif %}
+    {% assign years_str_padded = "," | append: years_str | append: "," %}
+    {% assign needle = "," | append: story_year | append: "," %}
+    {% unless years_str_padded contains needle %}
+      {% if years_str == "" %}{% assign years_str = story_year %}{% else %}{% assign years_str = years_str | append: "," | append: story_year %}{% endif %}
+    {% endunless %}
+  {% endfor %}
+  {% assign years = years_str | split: "," %}
+{% endif %}
+
 <div class="news-list">
   {% if group_by_year %}
-    {% comment %} Jekyll's group_by preserves first-appearance order from the input array, so
-       since stories is already sorted newest-first, the groups come out newest-year-first too. {% endcomment %}
-    {% assign year_groups = stories | group_by: 'archive_year' %}
-    {% for year_group in year_groups %}
-    <section class="news-year-group">
-      <h2 class="news-year-heading">{{ year_group.name }}</h2>
-      {% for story in year_group.items %}{% include community/news-row.html story=story full=include.full %}{% endfor %}
+    {% if years.size > 1 %}
+    <nav class="news-year-nav" aria-label="Jump to year">
+      {% for year in years %}<a href="#year-{{ year }}">{{ year }}</a>{% endfor %}
+    </nav>
+    {% endif %}
+    {% for year in years %}
+    <section id="year-{{ year }}" class="news-year-group">
+      <h2 class="news-year-heading">{{ year }}</h2>
+      {% for story in stories %}
+        {% assign story_year = story.published_date | date: '%Y' %}
+        {% if story_year == "" or story_year == nil %}{% assign story_year = story.archive_year %}{% endif %}
+        {% if story_year == year %}{% include community/news-row.html story=story full=include.full %}{% endif %}
+      {% endfor %}
     </section>
     {% endfor %}
   {% else %}
