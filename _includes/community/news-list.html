@@ -18,9 +18,9 @@
 
 <div class="news-list">
   {% if group_by_year %}
-    {% comment %} group_by sorts its resulting groups by name ascending, which would put 2020
-       before 2025; reverse it back to newest-year-first to match the sorted story order. {% endcomment %}
-    {% assign year_groups = stories | group_by: 'archive_year' | reverse %}
+    {% comment %} Jekyll's group_by preserves first-appearance order from the input array, so
+       since stories is already sorted newest-first, the groups come out newest-year-first too. {% endcomment %}
+    {% assign year_groups = stories | group_by: 'archive_year' %}
     {% for year_group in year_groups %}
     <section class="news-year-group">
       <h2 class="news-year-heading">{{ year_group.name }}</h2>
