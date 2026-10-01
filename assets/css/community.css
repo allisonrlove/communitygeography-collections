@@ -499,6 +499,59 @@ Not here: university branding (unm.css), or navigation behavior (nav.css).
   padding-left: 1.5rem;
   line-height: 1.7;
 }
+/* News timeline: grouped-by-year, dated rows used by community/news-list.html
+   and community/news-row.html (pages/news/*, _includes/community/home-news.md). */
+.news-list { display: flex; flex-direction: column; gap: var(--spacing-xl); }
+.news-year-group { display: flex; flex-direction: column; gap: var(--spacing-md); }
+.news-year-heading {
+  margin: 0;
+  padding-bottom: var(--spacing-xs);
+  color: var(--text-h2);
+  font-size: 1.4rem;
+  border-bottom: 2px solid var(--accent-border);
+}
+.news-row {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md);
+  background: var(--bg-card);
+  border-left: 3px solid var(--accent-border);
+  border-radius: var(--radius-sm);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+.news-row:hover { border-left-color: var(--interactive-hover); box-shadow: var(--shadow-sm); }
+.news-row-date {
+  flex: 0 0 auto;
+  width: 4.5rem;
+  text-align: center;
+}
+.news-row-time { display: flex; flex-direction: column; line-height: 1.1; }
+.news-row-month {
+  color: var(--accent-primary);
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+.news-row-day { color: var(--text-h2); font-size: 1.6rem; font-weight: 700; }
+.news-row-year { display: block; color: var(--text-muted); font-size: .8rem; }
+.news-row-year--only { color: var(--accent-primary); font-size: 1.1rem; font-weight: 700; }
+.news-row-body { flex: 1 1 auto; min-width: 0; }
+.news-row-title { margin: 0 0 var(--spacing-xs); font-size: 1.15rem; line-height: 1.3; }
+.news-row-title a { color: var(--text-h2); text-decoration: none; }
+.news-row-title a:hover, .news-row-title a:focus-visible { color: var(--interactive-hover); text-decoration: underline; }
+.news-row-excerpt { margin: 0; color: var(--text-muted); font-size: .92rem; line-height: 1.5; }
+.news-row--full { flex-direction: column; padding: var(--spacing-lg); }
+.news-row--full .news-row-date { width: auto; text-align: left; margin-bottom: var(--spacing-sm); }
+.news-row--full .news-row-time { flex-direction: row; align-items: baseline; gap: .35rem; }
+.news-row--full .news-row-title { font-size: 1.6rem; }
+@media (max-width: 600px) {
+  .news-row { gap: var(--spacing-sm); padding: var(--spacing-sm); }
+  .news-row-date { width: 3.4rem; }
+  .news-row-day { font-size: 1.25rem; }
+}
+
 @media (max-width: 767px) {
   .project-content { padding-inline: var(--spacing-md); }
   .project-article { padding-top: var(--spacing-md); }
