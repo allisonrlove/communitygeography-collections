@@ -1,0 +1,30 @@
+{% comment %}
+  Single news item row, used by community/news-list.html.
+
+  Parameters:
+    - story: a site.news document (required)
+    - full:  when true, render the full article body instead of a teaser excerpt
+{% endcomment %}
+<article class="news-row{% if include.full %} news-row--full{% endif %}">
+  <div class="news-row-date">
+    {% if include.story.published_date %}
+    <time class="news-row-time" datetime="{{ include.story.published_date }}">
+      <span class="news-row-month">{{ include.story.published_date | date: '%b' }}</span>
+      <span class="news-row-day">{{ include.story.published_date | date: '%-d' }}</span>
+      <span class="news-row-year">{{ include.story.published_date | date: '%Y' }}</span>
+    </time>
+    {% else %}
+    <span class="news-row-year news-row-year--only">{{ include.story.archive_year }}</span>
+    {% endif %}
+  </div>
+  <div class="news-row-body">
+    <h3 class="news-row-title"><a href="{{ include.story.url | relative_url }}">{{ include.story.title | escape }}</a></h3>
+    {% if include.full %}
+    <div class="record-body">{{ include.story.content | markdownify }}</div>
+    {% else %}
+    {% capture news_row_excerpt %}{{ include.story.content | markdownify | strip_html | normalize_whitespace }}{% endcapture %}
+    {% assign news_row_excerpt = news_row_excerpt | strip %}
+    {% if news_row_excerpt != empty %}<p class="news-row-excerpt">{{ news_row_excerpt | truncatewords: 32 }}</p>{% endif %}
+    {% endif %}
+  </div>
+</article>
