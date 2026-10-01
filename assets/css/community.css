@@ -502,7 +502,24 @@ Not here: university branding (unm.css), or navigation behavior (nav.css).
 /* News timeline: grouped-by-year, dated rows used by community/news-list.html
    and community/news-row.html (pages/news/*, _includes/community/home-news.md). */
 .news-list { display: flex; flex-direction: column; gap: var(--spacing-xl); }
-.news-year-group { display: flex; flex-direction: column; gap: var(--spacing-md); }
+.news-year-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xs) var(--spacing-sm);
+  padding-bottom: var(--spacing-sm);
+  border-bottom: 1px solid var(--accent-border);
+}
+.news-year-nav a {
+  padding: .25rem .65rem;
+  border: 1px solid var(--accent-border);
+  border-radius: 999px;
+  color: var(--text-h2);
+  font-size: .9rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+.news-year-nav a:hover, .news-year-nav a:focus-visible { background: var(--accent-border); color: var(--interactive-hover); }
+.news-year-group { display: flex; flex-direction: column; gap: var(--spacing-md); scroll-margin-top: var(--spacing-lg); }
 .news-year-heading {
   margin: 0;
   padding-bottom: var(--spacing-xs);
