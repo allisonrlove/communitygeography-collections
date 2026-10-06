@@ -1,0 +1,64 @@
+{% comment %}
+  Projects Carousel
+
+  An unobtrusive, auto-rotating horizontal carousel of current and past
+  projects for the home page. Reads each project page's front matter, so
+  adding or retiring a project only requires editing the Markdown file in
+  pages/projects/current-projects or pages/projects/past-projects — no
+  hand-built list to maintain here.
+
+  Usage:
+    {% include community/projects-carousel.html %}
+
+  Front matter read from each project page:
+    - title:      project name
+    - thumbnail:   image path (required for the card to appear)
+    - start_date:  used to order projects, most recent first
+    - end_date:    the literal "Ongoing" marks a project as current
+{% endcomment %}
+
+{% assign current_projects = site.pages | where_exp: "p", "p.path contains 'projects/current-projects/' and p.title and p.thumbnail" %}
+{% assign past_projects = site.pages | where_exp: "p", "p.path contains 'projects/past-projects/' and p.name != 'index.md' and p.title and p.thumbnail" %}
+{% assign current_sorted = current_projects | sort: "start_date" | reverse %}
+{% assign past_sorted = past_projects | sort: "start_date" | reverse %}
+{% assign all_projects = current_sorted | concat: past_sorted %}
+
+{% if all_projects.size > 0 %}
+<section class="projects-carousel-section" aria-labelledby="projects-carousel-title">
+  <div class="projects-carousel-header">
+    <div>
+      <p class="projects-carousel-kicker">Our work</p>
+      <h2 id="projects-carousel-title">Projects, past and present</h2>
+    </div>
+    <a class="projects-carousel-link" href="{{ '/projects/index.html' | relative_url }}">
+      See all projects <span aria-hidden="true">→</span>
+    </a>
+  </div>
+
+  <div class="projects-carousel" aria-label="Community geography projects">
+    <button class="projects-carousel-control projects-carousel-control--previous" type="button" aria-label="Show previous projects">
+      <span aria-hidden="true">‹</span>
+    </button>
+    <ul class="projects-carousel-track" tabindex="0">
+      {% for project in all_projects %}
+      <li class="projects-carousel-slide">
+        <a class="projects-carousel-card" href="{{ project.url | relative_url }}">
+          <img src="{{ project.thumbnail | relative_url }}" alt="" loading="lazy" decoding="async">
+          <span class="projects-carousel-card-overlay">
+            {% if project.end_date == "Ongoing" or project.end_date == nil %}
+              <span class="projects-carousel-card-tag">Current</span>
+            {% endif %}
+            <span class="projects-carousel-card-title">{{ project.title }}</span>
+          </span>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+    <button class="projects-carousel-control projects-carousel-control--next" type="button" aria-label="Show next projects">
+      <span aria-hidden="true">›</span>
+    </button>
+  </div>
+</section>
+
+<script src="{{ '/assets/js/projects-carousel.js' | relative_url }}" defer></script>
+{% endif %}
