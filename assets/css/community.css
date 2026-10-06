@@ -109,7 +109,7 @@ Not here: university branding (unm.css), or navigation behavior (nav.css).
   gap: clamp(var(--spacing-xl), 6vw, 6rem);
   min-height: min(48rem, calc(100vh - 10rem));
   margin-inline: calc(var(--unm-gutter) * -1);
-  padding: clamp(3rem, 8vw, 7rem) var(--unm-gutter);
+  padding: clamp(1.5rem, 3vw, 2.75rem) var(--unm-gutter) clamp(3rem, 8vw, 7rem);
   background: var(--bg-section-alt);
   border-bottom: 0.35rem solid var(--accent-primary);
 }
@@ -524,7 +524,7 @@ Not here: university branding (unm.css), or navigation behavior (nav.css).
   .center-content .img-left, .center-content .img-right { max-width: 100%; }
   .center-content--home { padding-inline: var(--unm-gutter); }
   .center-content--home :is(p, h1, h2, h3, ul, ol) { padding-inline: 0; }
-  .welcome-hero { grid-template-columns: 1fr; min-height: auto; gap: var(--spacing-xl); padding-block: var(--spacing-xl); }
+  .welcome-hero { grid-template-columns: 1fr; min-height: auto; gap: var(--spacing-xl); padding-block: var(--spacing-lg) var(--spacing-xl); }
   .welcome-copy { max-width: none; }
   .welcome-image { max-width: 34rem; width: 100%; margin-inline: auto; aspect-ratio: 4 / 3; }
   .community-geography-intro { margin-inline: calc(var(--unm-gutter) * -1); }
