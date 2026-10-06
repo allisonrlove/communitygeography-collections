@@ -11,7 +11,7 @@ faculty:
   - TBD
 community_member:
   - Albuquerque Backyard Refuge Program
-summary: The Center for Community Geography served as UNM's campus coordinator for the 2021 City Nature Challenge, pitting the Department of Geography & Environmental Studies against the Department of Biology to document the most wildlife observations. Resulting biodiversity datasets now support the Albuquerque Backyard Refuge Program's habitat restoration planning.
+summary: The Center coordinated UNM's entry in the 2021 City Nature Challenge, a campus-wide bioblitz whose biodiversity data now supports the Albuquerque Backyard Refuge Program's habitat restoration planning.
 ---
 
 # Campus coordinator for the 2021 City Nature Challenge

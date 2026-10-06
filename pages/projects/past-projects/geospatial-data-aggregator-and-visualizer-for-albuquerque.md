@@ -11,7 +11,7 @@ faculty:
   - TBD
 community_member:
   - TBD
-summary: Joshua Driscol built an interactive web map that aggregates and visualizes scattered geospatial data about Albuquerque, lowering the barrier to entry for people without GIS experience. The tool focuses on making social and environmental justice issues easier to explore and question through spatial data.
+summary: Joshua Driscol built an interactive web map aggregating scattered geospatial data about Albuquerque, making social and environmental justice issues easier to explore for people without GIS experience.
 ---
 
 # Geospatial data aggregator and visualizer for Albuquerque
