@@ -340,7 +340,9 @@ Not here: university branding (unm.css), or navigation behavior (nav.css).
   background: linear-gradient(to top, color-mix(in srgb, var(--bg-nav) 82%, transparent), transparent);
 }
 .projects-carousel-card-tag {
-  align-self: flex-start;
+  position: absolute;
+  top: .55rem;
+  left: .55rem;
   padding: .15rem .5rem;
   color: var(--text-on-dark);
   background: var(--accent-primary);
