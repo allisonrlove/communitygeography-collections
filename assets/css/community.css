@@ -627,14 +627,16 @@ Not here: university branding (unm.css), or navigation behavior (nav.css).
 .project-list .project-card .card-img-left {
   flex: 0 0 9rem;
   width: 9rem;
-  height: 9rem;
-  background: var(--bg-page);
+  height: auto;
 }
 
 /* Project thumbnails are often logos or portrait photos rather than
    landscape photography, so object-fit: cover (cards.css's default) crops
-   off the parts that make them recognizable. Showing the whole image inside
-   the fixed box keeps the grid tidy without cutting anything off. */
+   off the parts that make them recognizable. The current-projects box has
+   no fixed height on desktop, so the image already shows in full at its
+   natural aspect ratio there; contain still matters on the mobile layout
+   below (where the box does get a fixed height) and for the past-projects
+   box, which is fixed-height on every screen size. */
 .project-list .project-card .card-img-left img,
 .project-grid .project-card--past .card-img-top img {
   object-fit: contain;
@@ -737,7 +739,7 @@ Not here: university branding (unm.css), or navigation behavior (nav.css).
   min-height: 0;
 }
 .project-grid .project-card--past .card-body { gap: 0; padding: .9rem 1rem; }
-.project-grid .project-card--past .card-img-top { height: 9rem; background: var(--bg-page); }
+.project-grid .project-card--past .card-img-top { height: 9rem; background: var(--card-bg); }
 .project-grid .project-card--past h3 {
   margin: 0 0 .3rem;
   font-size: 1.1rem;
@@ -756,7 +758,7 @@ Not here: university branding (unm.css), or navigation behavior (nav.css).
 @media (max-width: 600px) {
   .project-list .project-card,
   .project-list .project-card .card-link { flex-direction: column; }
-  .project-list .project-card .card-img-left { width: 100%; height: 9rem; }
+  .project-list .project-card .card-img-left { width: 100%; height: 9rem; background: var(--card-bg); }
   .project-meta { grid-template-columns: 1fr; }
 }
 
