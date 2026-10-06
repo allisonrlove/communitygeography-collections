@@ -11,7 +11,7 @@ faculty:
   - TBD
 community_member:
   - New Mexico State Forestry Division
-summary: Center Project Assistant Joe Scala worked with the New Mexico State Forestry Division's GIS coordinator to build a model ranking urban areas statewide for urban-forestry investment. Using ArcMap and variables like tree canopy cover and demographic factors, the model identifies which Census Designated Places would benefit most from increased tree canopy.
+summary: Project Assistant Joe Scala built an ArcMap model for the New Mexico State Forestry Division ranking which Census Designated Places would benefit most from increased tree canopy.
 ---
 
 # New Mexico Urban Community Forestry Model

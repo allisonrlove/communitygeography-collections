@@ -11,7 +11,7 @@ faculty:
   - TBD
 community_member:
   - Middle Rio Grande farmers and producers
-summary: The ABQ Resilience Box is a mutual-aid food distribution project created and run by Middle Rio Grande farmers to connect local food and producer knowledge directly to the community. In 2022 the project distributed 188 boxes and circulated over $14,000 in the local economy, with support from the R.H. Mallory Center for Community Geography.
+summary: A mutual-aid food distribution project run by Middle Rio Grande farmers, the ABQ Resilience Box distributed 188 boxes and circulated over $14,000 in the local economy in 2022.
 ---
 
 # The ABQ Resilience Box

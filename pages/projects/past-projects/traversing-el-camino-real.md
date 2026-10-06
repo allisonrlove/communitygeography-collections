@@ -11,7 +11,7 @@ faculty:
   - TBD
 community_member:
   - National Trails – National Park Service (NPS)
-summary: In partnership with National Trails–NPS, Critical Cartography (GEOG 413/515) students built a StoryMap tracing El Camino Real de Tierra Adentro National Historic Trail. The project centers Indigenous history at Petroglyph National Monument, Gutiérrez-Hubbell House, and Martineztown, inviting visitors to connect with the trail in person.
+summary: Critical Cartography (GEOG 413/515) students built a StoryMap of El Camino Real de Tierra Adentro centering Indigenous history at Petroglyph National Monument and Martineztown.
 ---
 
 # StoryMap: Traversing El Camino Real de Tierra Adentro

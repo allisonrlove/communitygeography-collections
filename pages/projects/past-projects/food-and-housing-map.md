@@ -11,7 +11,7 @@ faculty:
   - TBD
 community_member:
   - UNM Basic Needs Project
-summary: Ramona Malczynski created a map of food and housing resources available to UNM students, sorted into on-campus, immediate, long-term, and family categories. The project was built for the UNM Basic Needs Project with support from the R.H. Mallory Center for Community Geography.
+summary: Ramona Malczynski created a map of food and housing resources for UNM students, sorted into on-campus, immediate, long-term, and family categories, for the UNM Basic Needs Project.
 ---
 
 # Food and Housing Resources Map for UNM Students

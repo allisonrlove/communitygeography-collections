@@ -34,17 +34,15 @@
             {% include helpers/card-image.html card=project class="card-img-left" %}
           {% endif %}
           <div class="card-body">
-            <div>
-              <h3>{{ project.title }}</h3>
-              {% if project.start_date %}
-                <p class="project-dates">
-                  {{ project.start_date | date: "%b %-d, %Y" }}
-                  <span aria-hidden="true">&ndash;</span>
-                  {% if project.end_date == "Ongoing" or project.end_date == nil %}Ongoing{% else %}{{ project.end_date | date: "%b %-d, %Y" }}{% endif %}
-                </p>
-              {% endif %}
-              <p class="card-text">{{ project.summary }}</p>
-            </div>
+            {% if project.start_date %}
+              <p class="project-dates">
+                {{ project.start_date | date: "%b %Y" }}
+                <span aria-hidden="true">&ndash;</span>
+                {% if project.end_date == "Ongoing" or project.end_date == nil %}Ongoing{% else %}{{ project.end_date | date: "%b %Y" }}{% endif %}
+              </p>
+            {% endif %}
+            <h3>{{ project.title }}</h3>
+            <p class="card-text">{{ project.summary }}</p>
             <dl class="project-meta">
               <div class="project-meta-row">
                 <dt>Faculty</dt>

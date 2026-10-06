@@ -13,7 +13,7 @@ faculty:
 community_member:
   - National Trails – National Park Service (NPS)
   - Bernalillo County
-summary: Students in Dr. Maria Lane's Critical Cartography course created StoryMaps re-examining the Old Spanish Trail to surface missing Indigenous histories alongside the dominant settler narrative. Working with the NPS-National Trails office and Bernalillo County, students designed cartographic interventions covering the Four Corners and Cajon Pass segments of the trail.
+summary: Students in Dr. Maria Lane's Critical Cartography course created StoryMaps surfacing missing Indigenous histories along the Old Spanish Trail, partnering with NPS-National Trails and Bernalillo County.
 ---
 
 # Re-Examining the Old Spanish Trail, storymap and class project in Critical Cartography 

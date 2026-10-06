@@ -12,7 +12,7 @@ faculty:
 community_member:
   - The Nature Conservancy
   - Rio Grande Water Fund
-summary: Latin American Studies graduate student Kelsey Varisco worked with The Nature Conservancy to propose a story-collection project for the Rio Grande Water Fund's signatories. Grounded in political ecology, the proposal aims to surface the diverse perspectives and identities behind the Fund's supporters to foster collaboration across differing viewpoints.
+summary: Graduate student Kelsey Varisco worked with The Nature Conservancy on a political-ecology story-collection proposal to surface the diverse perspectives behind the Rio Grande Water Fund's supporters.
 ---
 
 # Story Collection Proposal for the Rio Grande Water Fund

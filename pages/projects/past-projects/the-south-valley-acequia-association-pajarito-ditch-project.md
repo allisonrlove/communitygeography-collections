@@ -13,7 +13,7 @@ community_member:
   - South Valley Regional Acequia Association
   - Bernalillo County Open Space
   - Middle Rio Grande Conservancy District
-summary: Students in Dr. Maria Lane's Critical Cartography course partnered with the South Valley Regional Acequia Association to study how the Pajarito Acequia fits into the broader South Valley community. The resulting StoryMap, completed by Center staff member Cassidy Tawse-Garcia, documents the acequia's multi-faceted agricultural, recreational, and natural-resource uses.
+summary: Students in Dr. Maria Lane's Critical Cartography course partnered with the South Valley Regional Acequia Association on a StoryMap documenting the Pajarito Acequia's agricultural, recreational, and cultural uses.
 ---
 
 # The South Valley Acequia Association Pajarito Ditch Project

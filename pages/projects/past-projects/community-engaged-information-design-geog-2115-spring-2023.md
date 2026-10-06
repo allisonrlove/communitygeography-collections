@@ -11,7 +11,7 @@ faculty:
   - Dr. Yolanda C. Lin
 community_member:
   - Albuquerque City Nature Challenge (ABQ CNC)
-summary: In Information Design for Science and Society (GEOG 2115), Dr. Yolanda C. Lin's students developed data-driven infographics for the Albuquerque City Nature Challenge, shared on social media and featured at two community outreach booths. The project gave 43 students a hands-on, community-engaged design experience with real public impact.
+summary: In GEOG 2115, Dr. Yolanda C. Lin's students designed data-driven infographics for the Albuquerque City Nature Challenge, shared on social media and featured at two campus outreach booths.
 ---
 
 # Community-engaged information design (GEOG 2115, Spring 2023)

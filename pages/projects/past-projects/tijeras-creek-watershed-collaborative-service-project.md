@@ -12,7 +12,7 @@ faculty:
 community_member:
   - Tijeras Creek Watershed Collaborative
   - Bernalillo County Open Space
-summary: The Center partnered with the Tijeras Creek Watershed Collaborative to design a mapping tool documenting historical, present, and future conservation projects on the degraded Tijeras Creek Watershed. Built on an existing Bernalillo County Open Space ArcGIS map, the tool helps prioritize new projects and strengthen collaboration on a watershed action plan.
+summary: The Center partnered with the Tijeras Creek Watershed Collaborative on a mapping tool documenting conservation projects to help prioritize new work and strengthen the watershed action plan.
 ---
 
 # Service project for the Tijeras Creek Watershed Collaborative

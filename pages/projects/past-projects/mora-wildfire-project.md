@@ -12,7 +12,7 @@ faculty:
 community_member:
   - Neighbors Helping Neighbors
   - New Mexico Forest & Watershed Restoration Institute
-summary: Center staff member Cassidy Tawse-Garcia joined the Transformation Network's Diverse Economies Working Group to study post-wildfire community response to the Hermit's Peak and Calf Canyon fires. Working with Mora local Dr. Manuel Montoya and community partner Neighbors Helping Neighbors, the research examines mutual aid and informal care economies in disaster recovery.
+summary: Center staff member Cassidy Tawse-Garcia studies post-wildfire community response to the Hermit's Peak and Calf Canyon fires, examining mutual aid with Mora local Dr. Manuel Montoya and Neighbors Helping Neighbors.
 ---
 
 # Mora Wildfire Project

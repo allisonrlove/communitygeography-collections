@@ -14,7 +14,7 @@ community_member:
   - Bernalillo County
   - Village of Tijeras
   - Carnuel Land Grant
-summary: The Tijeras Creek Cultural Corridor Project protects the living cultural landscape of the Tijeras Watershed through oral histories, interpretive signage, and a StoryMap connecting land, water, animals, and people. Center staff member Cassidy Tawse-Garcia brought mapping and historical geography expertise to this multi-municipality collaboration.
+summary: This multi-municipality project protects the Tijeras Watershed's living cultural landscape through oral histories, signage, and a StoryMap, with mapping expertise from Center staff member Cassidy Tawse-Garcia.
 ---
 
 # Tijeras Creek Cultural Corridor Project (TCCCP)

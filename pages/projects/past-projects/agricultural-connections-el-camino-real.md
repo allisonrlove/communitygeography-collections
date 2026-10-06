@@ -11,7 +11,7 @@ faculty:
   - TBD
 community_member:
   - National Trails – National Park Service (NPS)
-summary: In Spring 2020, the Center partnered with National Trails–NPS to create StoryMaps connecting communities to El Camino Real de Tierra Adentro. Critical Cartography (GEOG 413/515) students designed this StoryMap to trace the agricultural and cultural exchange that sustained generations of Indigenous, Spanish, Mexican, and American communities along the trail.
+summary: Critical Cartography (GEOG 413/515) students partnered with National Trails-NPS to design a StoryMap tracing agricultural and cultural exchange along El Camino Real de Tierra Adentro.
 ---
 
 # StoryMap: Agricultural Connections Along the El Camino Real
