@@ -239,6 +239,142 @@ Not here: university branding (unm.css), or navigation behavior (nav.css).
   border-color: var(--interactive-hover);
   transform: translateY(-2px);
 }
+.projects-carousel-section {
+  margin: 0 calc(var(--unm-gutter) * -1);
+  padding: clamp(2rem, 4vw, 3.5rem) var(--unm-gutter);
+  background: var(--bg-section-alt);
+  border-block: 1px solid var(--border-light);
+}
+.projects-carousel-header {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: var(--spacing-md);
+  max-width: var(--width-center);
+  margin: 0 auto var(--spacing-md);
+}
+.projects-carousel-kicker {
+  margin: 0 0 var(--spacing-xs);
+  color: var(--text-kicker);
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+.projects-carousel-section h2 {
+  margin: 0;
+  color: var(--text-h2);
+  font-size: clamp(1.6rem, 2.6vw, 2.2rem);
+  line-height: 1.1;
+}
+.projects-carousel-link,
+.projects-carousel-link:visited {
+  flex: 0 0 auto;
+  color: var(--accent-primary);
+  border-bottom: 1px solid currentColor;
+  font-size: .8rem;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color var(--transition-fast);
+}
+.projects-carousel-link:hover,
+.projects-carousel-link:focus-visible { color: var(--interactive-hover); }
+.projects-carousel {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: var(--spacing-sm);
+  max-width: calc(var(--width-center) + 5rem);
+  margin: 0 auto;
+}
+.projects-carousel-track {
+  display: grid;
+  grid-auto-columns: minmax(10rem, 15rem);
+  grid-auto-flow: column;
+  gap: var(--spacing-sm);
+  margin: 0;
+  padding: .25rem;
+  list-style: none;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  scroll-behavior: smooth;
+  scroll-snap-type: inline mandatory;
+  scrollbar-width: none;
+}
+.projects-carousel-track::-webkit-scrollbar { display: none; }
+.projects-carousel-slide { scroll-snap-align: start; }
+.projects-carousel-card {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+  background: var(--bg-page);
+  border: 0;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow var(--transition-normal), transform var(--transition-normal);
+}
+.projects-carousel-card:hover,
+.projects-carousel-card:focus-visible {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-3px);
+}
+.projects-carousel-card img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform var(--transition-normal);
+}
+.projects-carousel-card:hover img,
+.projects-carousel-card:focus-visible img { transform: scale(1.04); }
+.projects-carousel-card-overlay {
+  position: absolute;
+  inset: auto 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: .3rem;
+  padding: var(--spacing-sm) .7rem .6rem;
+  background: linear-gradient(to top, color-mix(in srgb, var(--bg-nav) 82%, transparent), transparent);
+}
+.projects-carousel-card-tag {
+  align-self: flex-start;
+  padding: .15rem .5rem;
+  color: var(--text-on-dark);
+  background: var(--accent-primary);
+  border-radius: 999px;
+  font-size: .6rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.projects-carousel-card-title {
+  color: var(--text-on-dark);
+  font-size: .85rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+.projects-carousel-control {
+  width: 2.25rem;
+  height: 2.25rem;
+  padding: 0;
+  color: var(--accent-primary);
+  background: transparent;
+  border: 1px solid var(--border-medium);
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.1rem;
+  line-height: 1;
+  transition: background var(--transition-fast), border-color var(--transition-fast), color var(--transition-fast);
+}
+.projects-carousel-control:hover,
+.projects-carousel-control:focus-visible {
+  color: var(--text-on-dark);
+  background: var(--accent-primary);
+  border-color: var(--accent-primary);
+}
 .community-follow {
   margin: 0 calc(var(--unm-gutter) * -1);
   padding: clamp(2.5rem, 5vw, 4.5rem) var(--unm-gutter);
@@ -393,6 +529,11 @@ Not here: university branding (unm.css), or navigation behavior (nav.css).
   .community-geography-intro-inner { align-items: flex-start; flex-direction: column; }
   .community-follow { margin-inline: calc(var(--unm-gutter) * -1); }
   .community-follow-inner { align-items: flex-start; flex-direction: column; }
+  .projects-carousel-section { margin-inline: calc(var(--unm-gutter) * -1); }
+  .projects-carousel-header { align-items: flex-start; flex-direction: column; }
+  .projects-carousel { grid-template-columns: minmax(0, 1fr); }
+  .projects-carousel-control { display: none; }
+  .projects-carousel-track { grid-auto-columns: minmax(11rem, 66vw); }
 }
 
 .community-projects { grid-column: full; max-width: var(--width-center); width: 100%; padding-inline: 0; margin-inline: auto; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--spacing-lg); }
