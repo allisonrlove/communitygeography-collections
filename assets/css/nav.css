@@ -19,7 +19,7 @@ TOPNAV
 
 .top-nav {
   /* Box Model */
-  padding: 0.6rem var(--spacing-sm);
+  padding: 0.35rem var(--spacing-sm);
 
   /* Typography */
   font-family: var(--font-body);
@@ -196,7 +196,7 @@ TOPNAV
 .top-nav-link {
   /* Box Model */
   display: inline-block;
-  padding: 0.35rem 0.6rem;
+  padding: 0.25rem 0.6rem;
 
   /* Typography */
   color: var(--text-on-dark);
