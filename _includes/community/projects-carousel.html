@@ -44,10 +44,10 @@
       <li class="projects-carousel-slide">
         <a class="projects-carousel-card" href="{{ project.url | relative_url }}">
           <img src="{{ project.thumbnail | relative_url }}" alt="" loading="lazy" decoding="async">
+          {% if project.end_date == "Ongoing" or project.end_date == nil %}
+            <span class="projects-carousel-card-tag">Current</span>
+          {% endif %}
           <span class="projects-carousel-card-overlay">
-            {% if project.end_date == "Ongoing" or project.end_date == nil %}
-              <span class="projects-carousel-card-tag">Current</span>
-            {% endif %}
             <span class="projects-carousel-card-title">{{ project.title }}</span>
           </span>
         </a>
