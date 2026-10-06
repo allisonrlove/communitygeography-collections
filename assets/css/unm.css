@@ -34,7 +34,7 @@ The default 1170px shell and 235 × 70px logo match unm.edu's desktop header.
 .unm-shell { box-sizing: border-box; width: 100%; max-width: var(--unm-shell-width); margin-inline: auto; padding-inline: var(--unm-gutter); }
 .unm-header, .unm-footer { font-family: var(--unm-font); line-height: 1.5; }
 .unm-header *, .unm-footer * { box-sizing: border-box; }
-.unm-header { position: relative; z-index: 110; height: var(--unm-bar-height); background: var(--unm-cherry); color: var(--unm-white); font-size: 13px; }
+.unm-header { position: relative; z-index: 110; height: var(--unm-bar-height); background: var(--bg-nav); color: var(--unm-white); font-size: 13px; }
 .unm-header--standalone { margin-bottom: calc(var(--unm-logo-height) - var(--unm-bar-height)); }
 .unm-header-inner { position: relative; height: 100%; display: flex; justify-content: flex-end; align-items: center; }
 .unm-header .unm-header-logo { position: absolute; inset: 0 auto auto 0; z-index: 2; display: flex; align-items: center; width: var(--unm-logo-width); height: var(--unm-logo-height); padding: 0; background: var(--unm-white); border: 0; border-bottom: var(--unm-rule) solid var(--unm-cherry); text-decoration: none; }
