@@ -4,19 +4,23 @@ permalink: "/projects/project/test-project-1.html"
 source_url: https://communitygeography.unm.edu/projects/project/test-project-1.html
 section: Projects
 section_url: "/projects/index.html"
+thumbnail: "/assets/images/projects/project/boxed-apples.jpg"
+start_date: 2021-01-15
+end_date: 2021-05-15
+faculty:
+  - TBD
+community_member:
+  - National Trails – National Park Service (NPS)
+summary: In Spring 2020, the Center partnered with National Trails–NPS to create StoryMaps connecting communities to El Camino Real de Tierra Adentro. Critical Cartography (GEOG 413/515) students designed this StoryMap to trace the agricultural and cultural exchange that sustained generations of Indigenous, Spanish, Mexican, and American communities along the trail.
 ---
 
 # StoryMap: Agricultural Connections Along the El Camino Real
 
 <span id="photo-event"></span><img src="{{ '/assets/images/projects/project/boxed-apples.jpg' | relative_url }}" title=" " class="img-thumbnail student-project-thumb" loading="lazy" decoding="async" alt="StoryMap: Agricultural Connections Along the El Camino Real" />
 
-Start Date:   
-Jan 15, 2021
+{% include community/project-meta.html %}
 
-End Date:   
-May 15, 2021
-
-The R.H. Mallory Center for Community Geography partnered with the National Trails – NPS in Spring 2020 to create StoryMaps that would connect community members to El Camino Real de Tierra Adentro National Historic Trail. As part of the collaboration, students from Critical Cartography (GEOG 413/515) designed two StoryMaps in coordination with Center Project Assistant Desiree Loggins focused on agriculture and transportation to illustrate the important cultural and spatial connections made along El Camino Real that continue to make echoes today. 
+The R.H. Mallory Center for Community Geography partnered with the National Trails – NPS in Spring 2020 to create StoryMaps that would connect community members to El Camino Real de Tierra Adentro National Historic Trail. As part of the collaboration, students from Critical Cartography (GEOG 413/515) designed two StoryMaps in coordination with Center Project Assistant Desiree Loggins focused on agriculture and transportation to illustrate the important cultural and spatial connections made along El Camino Real that continue to make echoes today. 
 
 <span id="n-1lunEY"></span>
 

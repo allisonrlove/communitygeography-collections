@@ -4,19 +4,23 @@ permalink: "/projects/project/abq-backyard-refuge.html"
 source_url: https://communitygeography.unm.edu/projects/project/abq-backyard-refuge.html
 section: Projects
 section_url: "/projects/index.html"
+thumbnail: "/assets/images/projects/byr_per_nbr_slack.png"
+start_date: 2026-01-01
+end_date: Ongoing
+faculty:
+  - TBD
+community_member:
+  - Laurel Ladwig, New Mexico Backyard Refuge (NM BYR) Program
+summary: UNM Fellow Katie Slack is building an interactive web map for the New Mexico Backyard Refuge Program, pairing iNaturalist observations with other program data layers. The project turns a prior semester's buffer map into a public-facing tool that highlights urban habitat restoration across Albuquerque.
 ---
 
 # Albuquerque Backyard Refuge - Fellowship - Katie Slack
 
 <span id="photo-event"></span><img src="{{ '/assets/images/projects/byr_per_nbr_slack.png' | relative_url }}" title=" " class="img-thumbnail student-project-thumb" loading="lazy" decoding="async" alt="Albuquerque Backyard Refuge - Fellowship - Katie Slack" />
 
-Start Date:   
-Jan 01, 2026
+{% include community/project-meta.html %}
 
-End Date:   
-Ongoing
-
-As a UNM R.H. Mallory Center for Community Geography Fellow, Katie is contributing to the advancement of community-engaged environmental mapping through her work with the New Mexico Backyard Refuge (NM BYR) Program. In collaboration with Laurel Ladwig, Katie is leading the development of a digital mapping component designed to strengthen public access to ecological data and program outcomes. 
+As a UNM R.H. Mallory Center for Community Geography Fellow, Katie is contributing to the advancement of community-engaged environmental mapping through her work with the New Mexico Backyard Refuge (NM BYR) Program. In collaboration with Laurel Ladwig, Katie is leading the development of a digital mapping component designed to strengthen public access to ecological data and program outcomes. 
 
 Building upon a buffer map developed in a previous semester, Katie is refining and formatting the dataset for integration into an interactive web mapping application. This platform will display iNaturalist observations alongside additional spatial data layers generated through the NM BYR Program. By combining community-sourced biodiversity data with structured program information, the project enhances the visibility of urban habitat restoration efforts and promotes broader public understanding of local ecological impact.<img src="{{ '/assets/images/funding/ks_headshot_02.jpg' | relative_url }}" loading="lazy" decoding="async" width="220" height="240" alt="ks_headshot_02.jpg" />
 

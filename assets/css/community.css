@@ -451,27 +451,48 @@ Not here: university branding (unm.css), or navigation behavior (nav.css).
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-md);
 }
-.project-article > h1 + span[id="photo-event"] + img + p,
-.project-article > h1 + span[id="photo-event"] + img + p + p,
-.project-article > h1 + img + p,
-.project-article > h1 + img + p + p {
-  display: inline-flex;
-  flex-direction: column;
-  min-width: 10rem;
-  margin: 0 var(--spacing-sm) var(--spacing-xl) 0;
-  padding: .75rem 1rem;
-  color: var(--text-muted);
-  background: var(--bg-section-alt);
-  border-left: 3px solid var(--accent-primary);
-  font-size: .82rem;
-  font-weight: 700;
-  line-height: 1.45;
-}
-.project-article > h1 + span[id="photo-event"] + img + p + p,
-.project-article > h1 + img + p + p { margin-right: 0; }
 .project-article > :is(p, ul, ol, blockquote) {
   max-width: 48rem;
   margin-inline: auto;
+}
+/* Project meta: Start/End Date and Faculty/Community Member, read from a
+   project's front matter by community/project-meta.html (detail pages) and
+   community/current-projects.html + community/past-projects.html (listing
+   cards). Renders as a row of small label/value badges. */
+.project-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+  margin: 0;
+}
+.project-meta--detail {
+  max-width: 48rem;
+  margin: 0 auto var(--spacing-xl);
+}
+.project-meta-row {
+  display: inline-flex;
+  flex-direction: column;
+  min-width: 9rem;
+  margin: 0;
+  padding: .6rem .9rem;
+  background: var(--bg-section-alt);
+  border-left: 3px solid var(--accent-primary);
+  border-radius: var(--radius-sm);
+}
+.project-meta-row dt {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+.project-meta-row dd {
+  margin: 0;
+  color: var(--text-body);
+  font-size: .9rem;
+  font-weight: 600;
+  line-height: 1.3;
 }
 .project-article > p {
   color: var(--text-body);
@@ -575,15 +596,54 @@ Not here: university branding (unm.css), or navigation behavior (nav.css).
   .project-article > h1 { font-size: clamp(2.25rem, 11vw, 3.4rem); }
   .project-article > h1 + span[id="photo-event"] + img,
   .project-article > h1 + img { height: auto; aspect-ratio: 4 / 3; }
-  .project-article > h1 + span[id="photo-event"] + img + p,
-  .project-article > h1 + span[id="photo-event"] + img + p + p,
-  .project-article > h1 + img + p,
-  .project-article > h1 + img + p + p {
-    display: flex;
-    width: 100%;
-    margin-right: 0;
-    margin-bottom: var(--spacing-sm);
-  }
-  .project-article > h1 + span[id="photo-event"] + img + p + p,
-  .project-article > h1 + img + p + p { margin-bottom: var(--spacing-lg); }
+  .project-meta-row { min-width: 0; flex: 1 1 calc(50% - var(--spacing-sm)); }
 }
+
+/* Project listing cards: used by community/current-projects.html and
+   community/past-projects.html. Both are generic, data-driven includes that
+   read their content from each project page's front matter. */
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  max-width: 56rem;
+  margin-inline: auto;
+}
+.project-list .project-card {
+  min-height: 0;
+  margin-bottom: 0;
+}
+.project-list .project-card .card-img-left {
+  flex: 0 0 11rem;
+  width: 11rem;
+  height: auto;
+}
+.project-list .project-card .card-body { gap: var(--spacing-sm); padding: var(--spacing-md) var(--spacing-lg); }
+.project-dates {
+  margin: 0 0 var(--spacing-xs);
+  color: var(--text-muted);
+  font-size: .85rem;
+  font-weight: 600;
+}
+.project-list .project-meta { margin-top: var(--spacing-sm); }
+.project-list .project-meta-row { min-width: 0; flex: 1 1 auto; padding: .45rem .75rem; }
+
+.project-grid .project-card--past {
+  min-height: 0;
+}
+.project-grid .project-card--past .card-img-top { height: 12rem; }
+.project-grid .project-meta { margin-top: var(--spacing-sm); }
+.project-grid .project-meta-row { min-width: 0; flex: 1 1 auto; padding: .45rem .75rem; }
+
+@media (max-width: 600px) {
+  .project-list .project-card,
+  .project-list .project-card .card-link { flex-direction: column; }
+  .project-list .project-card .card-img-left { width: 100%; height: 12rem; }
+}
+
+.past-projects-gallery-link {
+  max-width: 56rem;
+  margin: 0 auto var(--spacing-lg);
+  font-weight: 600;
+}
+

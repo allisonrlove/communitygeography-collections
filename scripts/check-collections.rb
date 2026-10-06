@@ -26,7 +26,7 @@ people.each do |record|
     errors << "Missing searchable biography: #{record.data['name']}" unless entry && entry['content'].include?(record.data['name'])
   end
 end
-gallery = Nokogiri::HTML(File.read(File.join(output, 'projects/past-projects/index.html')))
+gallery = Nokogiri::HTML(File.read(File.join(output, 'projects/gis-day-2025-gallery.html')))
 errors << 'Gallery lost photographs' unless gallery.css('.record-gallery img').size == site.data['gis-day-gallery'].size
 gallery.css('.record-gallery img').each { |image| errors << "Gallery link missing: #{image['src']}" unless image.parent.name == 'a' && image.parent['href'] == image['src'] }
 

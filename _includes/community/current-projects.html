@@ -1,0 +1,69 @@
+{% comment %}
+  Current Projects List
+
+  A generic, data-driven list for active projects. Reads each project page's
+  front matter so that adding a project only requires a new Markdown file —
+  no hand-built card markup.
+
+  Usage:
+    {% include community/current-projects.html projects=current_projects %}
+
+  Front matter read from each project page:
+    - title:             project name
+    - thumbnail:          image path (required for the image to appear)
+    - start_date:         date the project began (required for the date line)
+    - end_date:           date the project ended, or the literal "Ongoing"
+    - faculty:            faculty involved (string or list)
+    - community_member:   community partner(s) involved — people or
+                           organizations (string or list)
+    - summary:            a short two-to-three sentence description
+{% endcomment %}
+
+{% assign sorted_projects = include.projects | sort: "start_date" | reverse %}
+
+{::nomarkdown}
+{% if include.projects and sorted_projects.size > 0 %}
+  <div class="project-list">
+    {% for project in sorted_projects %}
+    {% if project.title %}
+      {% assign faculty = project.faculty | join: ", " %}
+      {% assign community_member = project.community_member | join: ", " %}
+      <article class="card h-card project-card">
+        <a class="card-link" href="{{ project.url | relative_url }}">
+          {% if project.thumbnail %}
+            {% include helpers/card-image.html card=project class="card-img-left" %}
+          {% endif %}
+          <div class="card-body">
+            <div>
+              <h3>{{ project.title }}</h3>
+              {% if project.start_date %}
+                <p class="project-dates">
+                  {{ project.start_date | date: "%b %-d, %Y" }}
+                  <span aria-hidden="true">&ndash;</span>
+                  {% if project.end_date == "Ongoing" or project.end_date == nil %}Ongoing{% else %}{{ project.end_date | date: "%b %-d, %Y" }}{% endif %}
+                </p>
+              {% endif %}
+              <p class="card-text">{{ project.summary }}</p>
+            </div>
+            <dl class="project-meta">
+              <div class="project-meta-row">
+                <dt>Faculty</dt>
+                <dd>{{ faculty | default: "TBD" }}</dd>
+              </div>
+              <div class="project-meta-row">
+                <dt>Community Member</dt>
+                <dd>{{ community_member | default: "TBD" }}</dd>
+              </div>
+            </dl>
+          </div>
+        </a>
+      </article>
+    {% endif %}
+    {% endfor %}
+  </div>
+{% else %}
+  <div class="xanthan-warning">
+    community/current-projects.html needs a projects collection.
+  </div>
+{% endif %}
+{:/nomarkdown}

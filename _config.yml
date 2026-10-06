@@ -25,7 +25,11 @@ defaults:
   values:
     layout: base-unm
 - scope:
-    path: 'pages/projects/project'
+    path: 'pages/projects/current-projects'
+  values:
+    layout: project-unm
+- scope:
+    path: 'pages/projects/past-projects'
   values:
     layout: project-unm
 - scope:

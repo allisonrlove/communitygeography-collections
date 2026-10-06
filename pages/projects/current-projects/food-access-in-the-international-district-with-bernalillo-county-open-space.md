@@ -4,17 +4,22 @@ permalink: "/projects/project/food-access-in-the-international-district-with-ber
 source_url: https://communitygeography.unm.edu/projects/project/food-access-in-the-international-district-with-bernalillo-county-open-space.html
 section: Projects
 section_url: "/projects/index.html"
+thumbnail: "/assets/images/projects/project/berncoopenspace.png"
+start_date: 2023-08-21
+end_date: Ongoing
+faculty:
+  - TBD
+community_member:
+  - Bernalillo County Open Space
+  - Cultivating Bernalillo County Grow the Growers Program
+summary: Since fall 2023, a rotating team of Center fellows has partnered with Bernalillo County Open Space to support food access in Albuquerque's International District. Fellows have mapped community gardens, food distribution sites, and vacant lots, and built public-facing resources on local food systems and urban agriculture.
 ---
 
 # Food Access in the International District with Bernalillo County Open Space
 
 <span id="photo-event"></span><img src="{{ '/assets/images/projects/project/berncoopenspace.png' | relative_url }}" title=" " class="img-thumbnail student-project-thumb" loading="lazy" decoding="async" alt="Food Access in the International District with Bernalillo County Open Space" />
 
-Start Date:   
-Aug 21, 2023
-
-End Date:   
-Ongoing
+{% include community/project-meta.html %}
 
 The Center for Community Geography began work with Bernalillo County Open Space in the fall of 2023 through the work of community geography fellows Taressa Nield and Will Tatman. Fellows Ramona Malcyzski and Bianca Camacho have also contributed work to the project. Incoming fellow Meriah Williamson will be continuing this partnership in the spring of 2025.
 

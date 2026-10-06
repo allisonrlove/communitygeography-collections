@@ -5,19 +5,24 @@ permalink: "/projects/project/re-examining-the-old-spanish-trail.html"
 source_url: https://communitygeography.unm.edu/projects/project/re-examining-the-old-spanish-trail.html
 section: Projects
 section_url: "/projects/index.html"
+thumbnail: "/assets/images/projects/project/oldspanishtrail.png"
+start_date: 2023-01-16
+end_date: 2023-05-13
+faculty:
+  - Dr. Maria Lane
+community_member:
+  - National Trails – National Park Service (NPS)
+  - Bernalillo County
+summary: Students in Dr. Maria Lane's Critical Cartography course created StoryMaps re-examining the Old Spanish Trail to surface missing Indigenous histories alongside the dominant settler narrative. Working with the NPS-National Trails office and Bernalillo County, students designed cartographic interventions covering the Four Corners and Cajon Pass segments of the trail.
 ---
 
-# Re-Examining the Old Spanish Trail, storymap and class project in Critical Cartography 
+# Re-Examining the Old Spanish Trail, storymap and class project in Critical Cartography 
 
-<span id="photo-event"></span><img src="{{ '/assets/images/projects/project/oldspanishtrail.png' | relative_url }}" title=" " class="img-thumbnail student-project-thumb" loading="lazy" decoding="async" alt="Re-Examining the Old Spanish Trail, storymap and class project in Critical Cartography " />
+<span id="photo-event"></span><img src="{{ '/assets/images/projects/project/oldspanishtrail.png' | relative_url }}" title=" " class="img-thumbnail student-project-thumb" loading="lazy" decoding="async" alt="Re-Examining the Old Spanish Trail, storymap and class project in Critical Cartography " />
 
-Start Date:   
-Jan 16, 2023
+{% include community/project-meta.html %}
 
-End Date:   
-May 13, 2023
-
-The department of Geography & Environmental Studies offers a class in Critical Cartography (GEOG 413/513) that is taught by Maria Lane. In this course, students learn about participatory mapping, countermapping, data sovereignty, and more. Critical cartography is a set of mapping practices and analytical approaches grounded in critical theory. Critical cartographers merge humanistic and scientific questions in their work, recognizing maps as expressions of power and knowledge. 
+The department of Geography & Environmental Studies offers a class in Critical Cartography (GEOG 413/513) that is taught by Maria Lane. In this course, students learn about participatory mapping, countermapping, data sovereignty, and more. Critical cartography is a set of mapping practices and analytical approaches grounded in critical theory. Critical cartographers merge humanistic and scientific questions in their work, recognizing maps as expressions of power and knowledge.
 
 In the spring semester of 2023, Critical Cartography students conducted a map-based exploration of the Camino Real de Tierra Adentro, a national historic trail that runs through Bernalillo County. In collaboration with the Center for Community Geography and multiple community partners, the students created StoryMaps that highlight key themes along the trail corridor, in both historic and modern context. Two groups of students tackled the challenge of how to incorporate Indigenous histories and geographies into maps of the Old Spanish Trail. One group focused on the eastern portion of the trails in the Four Corners area, while the other focused on Cajon Pass at the western end of the trail.
 
