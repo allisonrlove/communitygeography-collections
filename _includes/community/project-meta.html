@@ -1,0 +1,36 @@
+{% comment %}
+  Project Meta (detail page)
+
+  Renders a project's Start Date / End Date and Faculty / Community Member
+  front matter as a compact meta block. Drop this into a project page's body
+  directly after its photo — where these facts used to be typed out as plain
+  paragraphs — so editing a project only means editing its front matter.
+
+  Reads from the current page's front matter:
+    - start_date, end_date (end_date may be the literal "Ongoing")
+    - faculty, community_member (string or list; people or organizations)
+{% endcomment %}
+{% assign faculty = page.faculty | join: ", " %}
+{% assign community_member = page.community_member | join: ", " %}
+{::nomarkdown}
+<dl class="project-meta project-meta--detail">
+  {% if page.start_date %}
+  <div class="project-meta-row">
+    <dt>Start Date</dt>
+    <dd>{{ page.start_date | date: "%b %-d, %Y" }}</dd>
+  </div>
+  <div class="project-meta-row">
+    <dt>End Date</dt>
+    <dd>{% if page.end_date == "Ongoing" or page.end_date == nil %}Ongoing{% else %}{{ page.end_date | date: "%b %-d, %Y" }}{% endif %}</dd>
+  </div>
+  {% endif %}
+  <div class="project-meta-row">
+    <dt>Faculty</dt>
+    <dd>{{ faculty | default: "TBD" }}</dd>
+  </div>
+  <div class="project-meta-row">
+    <dt>Community Member</dt>
+    <dd>{{ community_member | default: "TBD" }}</dd>
+  </div>
+</dl>
+{:/nomarkdown}

@@ -4,19 +4,25 @@ permalink: "/projects/project/albuquerque-backyard-refuge-program.html"
 source_url: https://communitygeography.unm.edu/projects/project/albuquerque-backyard-refuge-program.html
 section: Projects
 section_url: "/projects/index.html"
+thumbnail: "/assets/images/projects/project/abq-backyard-refuge-logo.jpg"
+start_date: 2025-01-13
+end_date: Ongoing
+faculty:
+  - TBD
+community_member:
+  - Corva Rose, Tree School New Mexico
+  - Vashti Moss McCulley, community art educator
+  - UNM Office of Sustainability
+summary: Project Goldfinch is a community art installation in Parson's Grove that leaves sunflower patches standing through winter to shelter goldfinches and other campus wildlife. Sustainability Studies and Geography & Environmental Studies students document wildlife with iNaturalist and Nature's Notebook while partnering with Tree School New Mexico and UNM Sustainability on habitat-friendly landscaping.
 ---
 
 # Albuquerque Backyard Refuge Program
 
 <span id="photo-event"></span><img src="{{ '/assets/images/projects/project/abq-backyard-refuge-logo.jpg' | relative_url }}" title=" " class="img-thumbnail student-project-thumb" loading="lazy" decoding="async" alt="Albuquerque Backyard Refuge Program" />
 
-Start Date:   
-Jan 13, 2025
+{% include community/project-meta.html %}
 
-End Date:   
-Ongoing
-
-**Dried Flowers Are Food For Finches!** 
+**Dried Flowers Are Food For Finches!** 
 
 Project Goldfinch is a community art project centered around the large patch of sunflowers in Parson’s Grove (between Sara Raynolds Hall and the Communication & Journalism building). 
 

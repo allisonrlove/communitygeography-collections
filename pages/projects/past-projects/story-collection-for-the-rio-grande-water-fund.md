@@ -4,17 +4,22 @@ permalink: "/projects/project/story-collection-for-the-rio-grande-water-fund.htm
 source_url: https://communitygeography.unm.edu/projects/project/story-collection-for-the-rio-grande-water-fund.html
 section: Projects
 section_url: "/projects/index.html"
+thumbnail: "/assets/images/projects/project/kelsey-project-2.jpeg"
+start_date: 2021-01-15
+end_date: 2021-05-15
+faculty:
+  - TBD
+community_member:
+  - The Nature Conservancy
+  - Rio Grande Water Fund
+summary: Latin American Studies graduate student Kelsey Varisco worked with The Nature Conservancy to propose a story-collection project for the Rio Grande Water Fund's signatories. Grounded in political ecology, the proposal aims to surface the diverse perspectives and identities behind the Fund's supporters to foster collaboration across differing viewpoints.
 ---
 
 # Story Collection Proposal for the Rio Grande Water Fund
 
 <span id="photo-event"></span><img src="{{ '/assets/images/projects/project/kelsey-project-2.jpeg' | relative_url }}" title=" " class="img-thumbnail student-project-thumb" loading="lazy" decoding="async" alt="Story Collection Proposal for the Rio Grande Water Fund" />
 
-Start Date:   
-Jan 15, 2021
-
-End Date:   
-May 15, 2021
+{% include community/project-meta.html %}
 
 Latin American Studies Graduate Student Kelsey Varisco completed a service learning project throgh a Center partnership with Geographies of Power (GEOG 515). She provides an overivew of that project below:
 

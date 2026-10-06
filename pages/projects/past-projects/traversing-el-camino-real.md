@@ -4,17 +4,21 @@ permalink: "/projects/project/test-project-2.html"
 source_url: https://communitygeography.unm.edu/projects/project/test-project-2.html
 section: Projects
 section_url: "/projects/index.html"
+thumbnail: "/assets/images/projects/project/mexican-carreta---chihuahua-loc.jpg"
+start_date: 2020-01-15
+end_date: 2021-08-15
+faculty:
+  - TBD
+community_member:
+  - National Trails – National Park Service (NPS)
+summary: In partnership with National Trails–NPS, Critical Cartography (GEOG 413/515) students built a StoryMap tracing El Camino Real de Tierra Adentro National Historic Trail. The project centers Indigenous history at Petroglyph National Monument, Gutiérrez-Hubbell House, and Martineztown, inviting visitors to connect with the trail in person.
 ---
 
 # StoryMap: Traversing El Camino Real de Tierra Adentro
 
 <span id="photo-event"></span><img src="{{ '/assets/images/projects/project/mexican-carreta---chihuahua-loc.jpg' | relative_url }}" title=" " class="img-thumbnail student-project-thumb" loading="lazy" decoding="async" alt="StoryMap: Traversing El Camino Real de Tierra Adentro" />
 
-Start Date:   
-Jan 15, 2020
-
-End Date:   
-Aug 15, 2021
+{% include community/project-meta.html %}
 
 [<img src="{{ '/assets/images/projects/project/traversing-el-camilo-real-de-tierra-adentro.png' | relative_url }}" class="img-left" loading="lazy" decoding="async" width="614" height="288" alt="traversing-el-camilo-real-de-tierra-adentro.png" />](https://storymaps.arcgis.com/stories/6bd0ecd329e64c7f8d64601073f8a0df)The R.H. Mallory Center for Community Geography partnered with the National Trails – NPS in Spring 2020 to create StoryMaps that would connect community members to El Camino Real de Tierra Adentro National Historic Trail. As part of the collaboration, students from Critical Cartography (GEOG 413/515) designed two StoryMaps focused on agriculture and transportation to illustrate the important cultural and spatial connections made along El Camino Real that continue to make echoes today.
 
