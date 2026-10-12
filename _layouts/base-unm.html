@@ -6,11 +6,25 @@
     {% include unm/analytics.html %}
     <div class="page-wrap">
       {% include unm/nav-unm.html overlap=true %}
+      {% if page.home and site.home_hero %}
+      <header class="center-hero" style="--hero-count: {{ site.home_hero.images.size }};">
+        <div class="center-hero-slides" aria-hidden="true">
+          {% for image in site.home_hero.images %}
+          <div class="center-hero-slide" style="background-image: url('{{ image | relative_url }}'); --slide-index: {{ forloop.index0 }};"></div>
+          {% endfor %}
+        </div>
+        <a class="center-hero-logo" href="{{ '/' | relative_url }}" style="--hero-logo: url('{{ site.home_hero.logo | relative_url }}');">
+          <span class="center-hero-logo-art" aria-hidden="true"></span>
+          <span class="center-hero-sr">{{ site.center_banner.alt | escape }}</span>
+        </a>
+      </header>
+      {% else %}
       <header class="center-masthead">
         <a href="{{ '/' | relative_url }}" aria-label="{{ site.name }} home">
           <img src="{{ site.center_banner.image | relative_url }}" width="{{ site.center_banner.width }}" height="{{ site.center_banner.height }}" alt="{{ site.center_banner.alt | escape }}">
         </a>
       </header>
+      {% endif %}
       <div class="unm-site-nav">{% include nav/nav-top.html %}</div>
       <main id="main">
         {% unless page.home %}
