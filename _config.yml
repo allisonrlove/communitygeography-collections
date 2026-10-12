@@ -63,3 +63,10 @@ center_banner:
   width: 1920
   height: 300
   alt: R.H. Mallory Center for Community Geography, University of New Mexico
+home_hero:
+  logo: /assets/images/hero/center-logo-text-transparent.png
+  images:
+  - /assets/images/hero/hero-badlands.jpg
+  - /assets/images/hero/hero-organ-mountains.jpg
+  - /assets/images/hero/hero-sandia-bosque.jpg
+  - /assets/images/hero/hero-lava-field.jpg
