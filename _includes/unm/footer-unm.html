@@ -1,64 +1,8 @@
 {% comment %}
   UNM footer, adapted from unm.edu with scoped styling and semantic headings.
-  heading-level: integer (default 2) — headings for directory groups.
-  Set unm.footer_directory: false for only identity, social, and legal links.
 {% endcomment %}
-{% assign unm_footer_heading = include.heading-level | default: 2 %}
 <footer class="unm-footer" aria-label="University of New Mexico">
   <div class="unm-shell">
-    {% unless site.unm.footer_directory == false %}
-    <div class="unm-footer-directory">
-      <nav aria-label="Academics">
-        <h{{ unm_footer_heading }} class="unm-footer-heading">Academics</h{{ unm_footer_heading }}>
-        <ul>
-          <li><a href="https://unmevents.unm.edu/site/academic">Academic Calendars</a></li>
-          <li><a href="https://schedule.unm.edu/">Class Schedule</a></li>
-          <li><a href="https://www.unm.edu/academics/">Colleges &amp; Schools</a></li>
-          <li><a href="https://catalog.unm.edu/">Course Catalog</a></li>
-          <li><a href="https://degrees.unm.edu/">Degrees &amp; Certificates</a></li>
-          <li><a href="https://grad.unm.edu/">Graduate Studies</a></li>
-        </ul>
-      </nav>
-      <nav aria-label="Campus Life">
-        <h{{ unm_footer_heading }} class="unm-footer-heading">Campus Life</h{{ unm_footer_heading }}>
-        <ul>
-          <li><a href="https://www.unm.edu/arts/index.html">Arts &amp; Entertainment</a></li>
-          <li><a href="https://www.golobos.com">Athletics</a></li>
-          <li><a href="https://diverse.unm.edu/">Diversity</a></li>
-          <li><a href="https://recservices.unm.edu/">Recreational Services</a></li>
-          <li><a href="https://sac.unm.edu">Student Activities</a></li>
-          <li><a href="https://sub.unm.edu">Student Union</a></li>
-        </ul>
-      </nav>
-      <nav aria-label="Resources">
-        <h{{ unm_footer_heading }} class="unm-footer-heading">Resources</h{{ unm_footer_heading }}>
-        <ul>
-          <li><a href="https://bookstore.unm.edu">Bookstore</a></li>
-          <li><a href="https://computing.unm.edu">Computing</a></li>
-          <li><a href="https://ce.unm.edu">Continuing Education</a></li>
-          <li><a href="https://unmjobs.unm.edu">Employment</a></li>
-          <li><a href="https://www.unm.edu/libraries/">Libraries</a></li>
-          <li><a href="https://newsroom.unm.edu">UNM News</a></li>
-        </ul>
-      </nav>
-      <nav aria-label="Information for…">
-        <h{{ unm_footer_heading }} class="unm-footer-heading">Information for…</h{{ unm_footer_heading }}>
-        <ul>
-          <li><a href="https://www.unmalumni.com/">Alumni</a></li>
-          <li><a href="https://www.unm.edu/facultyandstaff/">Faculty</a></li>
-          <li><a href="https://www.unm.edu/parents-families/index.html">Parents &amp; Families</a></li>
-          <li><a href="https://hospitals.unm.edu">Patients</a></li>
-          <li><a href="https://publicrecords.unm.edu/">Public Records - IPRA</a></li>
-          <li><a href="https://www.unm.edu/facultyandstaff/">Staff</a></li>
-        </ul>
-      </nav>
-      <nav class="unm-footer-actions" aria-label="Connect with UNM">
-        <a class="unm-footer-action" href="https://www.unm.edu/apply"><strong>✓ APPLY</strong> Now</a>
-        <a class="unm-footer-action" href="https://admissions.unm.edu/visit-us/"><strong>Visit</strong> UNM</a>
-        <a class="unm-footer-action" href="https://www.unmfund.org/"><strong>Give</strong> to UNM</a>
-      </nav>
-    </div>
-    {% endunless %}
     <div class="unm-footer-bottom">
       <div>
         <a class="unm-footer-logo" href="https://www.unm.edu/"><img src="{{ '/assets/unm/unm-transparent-white.png' | relative_url }}" width="200" height="65" alt="The University of New Mexico" loading="lazy"></a>
