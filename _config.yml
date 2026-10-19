@@ -44,6 +44,7 @@ defaults:
     layout: news-unm
 exclude:
 - README.md
+- HOW-TO-EDIT-THIS-WEBSITE.md
 - LICENSE
 - Gemfile
 - Gemfile.lock

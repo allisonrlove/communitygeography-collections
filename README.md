@@ -1,5 +1,7 @@
 # Community Geography — collections
 
+> **New editor? Start here: [HOW-TO-EDIT-THIS-WEBSITE.md](HOW-TO-EDIT-THIS-WEBSITE.md)** — a step-by-step guide for people with no coding experience.
+
 This stage builds on [communitygeography-reorg](https://github.com/amaranth-unm/communitygeography-reorg), with the original UNM/Xanthan appearance and public routes. It demonstrates how editors can maintain one record and have pages, lists, and search update consistently.
 
 | Stage | Demonstrates |
